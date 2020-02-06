@@ -1,12 +1,14 @@
----
-description: >-
-  The following objects form the message bodies for the five corresponding API
-  endpoints as:
----
-
 # Objects
 
-## Create Message
+The following objects form the message bodies for the five corresponding API endpoints:
+
+* \`\`[`add_Game`](./#add_game)\`\`
+* \`\`[`start_Game`](./#start_game)\`\`
+* `add_Results`
+* `finish_Game`
+* `cancel_Game`
+
+## Create \(Add\) Message
 
 Parameters for new BOS incident message to create a game and add to Couch Potato database.
 
@@ -38,7 +40,7 @@ Parameters for new BOS incident message to create a game and add to Couch Potato
 {% endtab %}
 {% endtabs %}
 
-## In Progress Message
+## In Progress \(Start\) Message
 
 Parameters for new BOS incident message to start a game and add to Couch Potato database.
 
@@ -137,7 +139,7 @@ Parameters for new BOS incident message to finish/complete a game and add to Cou
 {% endtab %}
 {% endtabs %}
 
-## Canceled Message
+## Cancel\(ed\) Message
 
 Parameters for new BOS incident message to cancel a game and add to Couch Potato database.
 
