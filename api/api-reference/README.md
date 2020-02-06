@@ -20,21 +20,11 @@ POST /add_game/:create_message
 {% endtab %}
 
 {% tab title="Response" %}
-* Success 
-  * `status`: 200
-  * `title`: Game added
-  * `message`: [Success Object](objects-1.md#success-response-object)
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  One of **`Error Objects`**
-  * `title`: One of ``**`Error Objects`**
-  * `message`: One of **`Error Objects`**
-
-**`Error Objects`**
-
-* [BOS Errors](error-codes.md#bos-errors)
-* [General Errors](error-codes.md#general-errors)
-* [Add Game Errors](error-codes.md#add-game-errors)
+* 200: Success
+* 400: Bad Request
+  * Sub codes [BOS Errors](error-codes.md#bos-errors)
+  * Sub codes [General Errors](error-codes.md#general-errors)
+  * Sub codes [Add Game Errors](error-codes.md#add-game-errors)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -106,21 +96,11 @@ POST /add_game/:in_progress_message
 {% endtab %}
 
 {% tab title="Response" %}
-* Success 
-  * `status`: 200
-  * `title`: Game added
-  * `message`: [Success Object](objects-1.md#success-response-object)
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  One of **`Error Objects`**
-  * `title`: One of ``**`Error Objects`**
-  * `message`: One of **`Error Objects`**
-
-**`Error Objects`**
-
-* [BOS Errors](error-codes.md#bos-errors)
-* [General Errors](error-codes.md#general-errors)
-* [Add Game Errors](error-codes.md#add-game-errors)
+* 200: Success
+* 400: Bad Request
+  * Sub codes [BOS Errors](error-codes.md#bos-errors)
+  * Sub codes [General Errors](error-codes.md#general-errors)
+  * Sub codes [Start Game Errors](error-codes.md#start-game-errors)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -150,15 +130,30 @@ this.http.post(url + "start_game.php?" , postData, {headers}).map();
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><em>games</em>
+      <td style="text-align:left"><em>events</em>
       </td>
-      <td style="text-align:left">Start existing by adding <code>whistle_start_time.</code>
-      </td>
+      <td style="text-align:left">Add new event if this is the first game.</td>
       <td style="text-align:left">
         <p>200: Success</p>
-        <p>400[481]: Bad whistle start time
-          <br />
-        </p>
+        <p>400[472]: Failed to add new event</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>games</em>
+      </td>
+      <td style="text-align:left">Add new game</td>
+      <td style="text-align:left">
+        <p>200: Success</p>
+        <p>400[474]: Failed to add new game</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>progress</em>
+      </td>
+      <td style="text-align:left">And new progress record. Set status to 0 (Not Started)</td>
+      <td style="text-align:left">
+        <p>200: Success</p>
+        <p>400[472]: Failed to add progress</p>
       </td>
     </tr>
   </tbody>

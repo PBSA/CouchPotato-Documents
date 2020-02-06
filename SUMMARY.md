@@ -23,4 +23,5 @@
 * [API Reference](api/api-reference/README.md)
   * [Objects](api/api-reference/objects-1.md)
   * [Response Codes](api/api-reference/error-codes.md)
+* [BOS Schema](api/bos-schema.md)
 
