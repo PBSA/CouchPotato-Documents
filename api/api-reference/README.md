@@ -106,11 +106,21 @@ POST /add_game/:in_progress_message
 {% endtab %}
 
 {% tab title="Response" %}
-* 200: Success
-* 400: Bad Request
-  * Sub codes [BOS Errors](error-codes.md#bos-errors)
-  * Sub codes [General Errors](error-codes.md#general-errors)
-  * Sub codes [Start Game Errors](error-codes.md#start-game-errors)
+* Success 
+  * `status`: 200
+  * `title`: Game added
+  * `message`: [Success Object](objects-1.md#success-response-object)
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  One of **`Error Objects`**
+  * `title`: One of ``**`Error Objects`**
+  * `message`: One of **`Error Objects`**
+
+**`Error Objects`**
+
+* [BOS Errors](error-codes.md#bos-errors)
+* [General Errors](error-codes.md#general-errors)
+* [Add Game Errors](error-codes.md#add-game-errors)
 {% endtab %}
 
 {% tab title="Example" %}

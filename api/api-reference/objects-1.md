@@ -1,6 +1,8 @@
 # Objects
 
-The following objects form the message bodies for the five corresponding API endpoints:
+## BOS Objects
+
+The following objects are used to pass data to the following five API endpoints, or objects from response messages for:
 
 * \`\`[`add_Game`](./#add_game)\`\`
 * \`\`[`start_Game`](./#start_game)\`\`
@@ -8,7 +10,7 @@ The following objects form the message bodies for the five corresponding API end
 * `finish_Game`
 * `cancel_Game`
 
-## Create \(Add\) Message
+### Create \(Add\) Message
 
 Parameters for new BOS incident message to create a game and add to Couch Potato database.
 
@@ -40,7 +42,7 @@ Parameters for new BOS incident message to create a game and add to Couch Potato
 {% endtab %}
 {% endtabs %}
 
-## In Progress \(Start\) Message
+### In Progress \(Start\) Message
 
 Parameters for new BOS incident message to start a game and add to Couch Potato database.
 
@@ -72,7 +74,7 @@ Parameters for new BOS incident message to start a game and add to Couch Potato 
 {% endtab %}
 {% endtabs %}
 
-## Result Message
+### Result Message
 
 Parameters for new BOS incident message to set the score of a game and add to Couch Potato database.
 
@@ -106,7 +108,7 @@ Parameters for new BOS incident message to set the score of a game and add to Co
 {% endtab %}
 {% endtabs %}
 
-## Finish Message
+### Finish Message
 
 Parameters for new BOS incident message to finish/complete a game and add to Couch Potato database.
 
@@ -139,7 +141,7 @@ Parameters for new BOS incident message to finish/complete a game and add to Cou
 {% endtab %}
 {% endtabs %}
 
-## Cancel\(ed\) Message
+### Cancel\(ed\) Message
 
 Parameters for new BOS incident message to cancel a game and add to Couch Potato database.
 
@@ -168,4 +170,26 @@ Parameters for new BOS incident message to cancel a game and add to Couch Potato
 ```
 {% endtab %}
 {% endtabs %}
+
+### Success Response Object
+
+Object attributes from a Success: 200 response.
+
+{% tabs %}
+{% tab title="Attributes" %}
+| Name | Description |
+| :--- | :--- |
+| id |  |
+| id\_approve |  |
+| message |  |
+
+"id":"78359ca1-7cf1-4272-abdd-03101d3a0eb1","id\_approve":"4428ac99-e623-4f13-af9a-953c20b0fd97","message":{"arguments":{"season":"2019\/2020"},"call":"create","id":{"away":"Manchester City","event\_group\_name":"EPL","home":"Chelsea","sport":"Soccer","start\_time":"2020-02-04T18:30:00.000Z"},"provider\_info":{"match\_id":null,"name":"couch-potato","pushed":"2020-02-06T18:19:46.000Z","source":"direct string input","source\_file":""},"timestamp":"2020-02-06T18:19:46.000Z","unique\_string":"2020-02-04t18:33:00.000z**soccer**epl**chelsea**manchester\_city**create**20192020"},"result":"processing"}}
+{% endtab %}
+
+{% tab title="Example" %}
+{"status":"200","title":"Game added","message":{"id":"78359ca1-7cf1-4272-abdd-03101d3a0eb1","id\_approve":"4428ac99-e623-4f13-af9a-953c20b0fd97","message":{"arguments":{"season":"2019\/2020"},"call":"create","id":{"away":"Manchester City","event\_group\_name":"EPL","home":"Chelsea","sport":"Soccer","start\_time":"2020-02-04T18:30:00.000Z"},"provider\_info":{"match\_id":null,"name":"couch-potato","pushed":"2020-02-06T18:19:46.000Z","source":"direct string input","source\_file":""},"timestamp":"2020-02-06T18:19:46.000Z","unique\_string":"2020-02-04t18:33:00.000z**soccer**epl**chelsea**manchester\_city**create**20192020"},"result":"processing"}}
+{% endtab %}
+{% endtabs %}
+
+## 
 
