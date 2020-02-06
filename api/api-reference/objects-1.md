@@ -10,7 +10,7 @@ The following objects are used to pass data to the following five API endpoints,
 * `finish_Game`
 * `cancel_Game`
 
-### Create \(Add\) Message
+### Create \(Add\) 
 
 Parameters for new BOS incident message to create a game and add to Couch Potato database.
 
@@ -42,7 +42,7 @@ Parameters for new BOS incident message to create a game and add to Couch Potato
 {% endtab %}
 {% endtabs %}
 
-### In Progress \(Start\) Message
+### In Progress \(Start\) 
 
 Parameters for new BOS incident message to start a game and add to Couch Potato database.
 
@@ -74,7 +74,7 @@ Parameters for new BOS incident message to start a game and add to Couch Potato 
 {% endtab %}
 {% endtabs %}
 
-### Result Message
+### Result 
 
 Parameters for new BOS incident message to set the score of a game and add to Couch Potato database.
 
@@ -108,7 +108,7 @@ Parameters for new BOS incident message to set the score of a game and add to Co
 {% endtab %}
 {% endtabs %}
 
-### Finish Message
+### Finish 
 
 Parameters for new BOS incident message to finish/complete a game and add to Couch Potato database.
 
@@ -141,7 +141,7 @@ Parameters for new BOS incident message to finish/complete a game and add to Cou
 {% endtab %}
 {% endtabs %}
 
-### Cancel\(ed\) Message
+### Cancel\(ed\) 
 
 Parameters for new BOS incident message to cancel a game and add to Couch Potato database.
 
@@ -171,9 +171,9 @@ Parameters for new BOS incident message to cancel a game and add to Couch Potato
 {% endtab %}
 {% endtabs %}
 
-### Create Success Response Object
+### Add Game Success Response 
 
-Object attributes from a Success: 200 response.
+Object attributes for a 200 response from an [add\_game](./#add_game) call.
 
 {% tabs %}
 {% tab title="Attributes" %}
