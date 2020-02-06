@@ -8,6 +8,12 @@ Adds a new game and sends a create incident message to BOS.
 POST /add_game/:create_message
 ```
 
+**Header**
+
+```csharp
+{'Content-Type' : 'application/json'}
+```
+
 {% tabs %}
 {% tab title="Parameters" %}
 * `create_message`: Object of type [Create](objects-1.md#create-message)
@@ -23,7 +29,9 @@ POST /add_game/:create_message
 
 {% tab title="Example" %}
 ```typescript
+var headers = new HttpHeaders({'Content-Type' : 'application/json'});
 var postData:any = {};
+
 postData.sport = "Soccer";
 postData.league = "EPL";
 postData.user = 1;
