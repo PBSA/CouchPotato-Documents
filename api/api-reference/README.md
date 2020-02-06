@@ -130,30 +130,15 @@ this.http.post(url + "start_game.php?" , postData, {headers}).map();
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><em>events</em>
-      </td>
-      <td style="text-align:left">Add new event if this is the first game.</td>
-      <td style="text-align:left">
-        <p>200: Success</p>
-        <p>400[472]: Failed to add new event</p>
-      </td>
-    </tr>
-    <tr>
       <td style="text-align:left"><em>games</em>
       </td>
-      <td style="text-align:left">Add new game</td>
+      <td style="text-align:left">Start existing by adding <code>whistle_start_time.</code>
+      </td>
       <td style="text-align:left">
         <p>200: Success</p>
-        <p>400[474]: Failed to add new game</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><em>progress</em>
-      </td>
-      <td style="text-align:left">And new progress record. Set status to 0 (Not Started)</td>
-      <td style="text-align:left">
-        <p>200: Success</p>
-        <p>400[472]: Failed to add progress</p>
+        <p>400[481]: Bad whistle start time
+          <br />
+        </p>
       </td>
     </tr>
   </tbody>
