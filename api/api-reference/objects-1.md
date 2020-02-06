@@ -34,17 +34,15 @@
 
 {% tabs %}
 {% tab title="Object" %}
-```csharp
-{
-  "sport": string,
-  "league": string,
-  "home": string,
-  "away": string,
-  "start_time": Date,
-  "match_id": number,
-  "whistle_start_time": Date
-}
-```
+| Parameter | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| `sport` | Sport name | String | Yes |
+| `league` | League \(Event Group\) of sport | String | Yes |
+| `home` | Home team name | String | Yes |
+| `away` | Away team name | String | Yes |
+| `start_time` | Start date/time of game | Date | Yes |
+| `user` | Current user id | Number | Yes |
+| `match_id` | Unique match identifier | Number | No |
 {% endtab %}
 
 {% tab title="Example" %}
