@@ -10,7 +10,7 @@ POST /add_game/:create_message
 
 **Header**
 
-```csharp
+```http
 {'Content-Type' : 'application/json'}
 ```
 
