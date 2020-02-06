@@ -20,11 +20,18 @@ POST /add_game/:create_message
 {% endtab %}
 
 {% tab title="Response" %}
-* 200: Success
-* 400: Bad Request
-  * Sub codes [BOS Errors](error-codes.md#bos-errors)
-  * Sub codes [General Errors](error-codes.md#general-errors)
-  * Sub codes [Add Game Errors](error-codes.md#add-game-errors)
+* Success 
+  * `status`: 200
+  * `title`: Game added
+  * `message`: [Success Object](objects-1.md#success-response-object)
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  See Error Objects
+  * title: See Error Objects
+  * message: See Error Objects
+    * Sub codes [BOS Errors](error-codes.md#bos-errors)
+    * Sub codes [General Errors](error-codes.md#general-errors)
+    * Sub codes [Add Game Errors](error-codes.md#add-game-errors)
 {% endtab %}
 
 {% tab title="Example" %}
