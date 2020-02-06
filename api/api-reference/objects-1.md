@@ -1,7 +1,7 @@
 ---
 description: >-
   The following objects form the message bodies for the five corresponding API
-  endpoints:
+  endpoints as:
 ---
 
 # Objects
