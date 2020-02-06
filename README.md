@@ -1,2 +1,2 @@
-# CP-Documents
-Couch Potato documentation.
+# Couch Potato
+
