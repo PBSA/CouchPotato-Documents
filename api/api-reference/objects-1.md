@@ -4,8 +4,8 @@
 
 The following objects are used to pass data to the following five API endpoints, or objects from response messages for:
 
-* \`\`[`add_Game`](./#add_game)\`\`
-* \`\`[`start_Game`](./#start_game)\`\`
+* \`\`[`add_game`](./#add_game)\`\`
+* \`\`[`start_game`](./#start_game)\`\`
 * `add_Results`
 * `finish_Game`
 * `cancel_Game`
@@ -223,5 +223,55 @@ Object attributes for a 200 response from an [add\_game](./#add_game) call.
 {% endtab %}
 {% endtabs %}
 
-## 
+### Start Game Success Response 
+
+Object attributes for a 200 response from an [start\_game](./#start_game) call.
+
+{% tabs %}
+{% tab title="Attributes" %}
+| Name | Description |
+| :--- | :--- |
+| id | Unique response identifier for the incident |
+| id\_approve | Unique identifier for the incident approval |
+| message | Message body of type [in\_progress schema](../bos-schema.md#in_progress) |
+| result | Status of operation - usually "processing" |
+{% endtab %}
+
+{% tab title="Example" %}
+```java
+{
+    "id":"78359ca1-7cf1-4272-abdd-03101d3a0eb1",
+    "id_approve":"4428ac99-e623-4f13-af9a-953c20b0fd97",
+    "message":
+        {
+            "arguments":
+                {
+                   "whistle_start_time":"2020-02-04T18:35:00.000Z"
+                },
+            "call":"create",
+            "id":
+                {
+                    "away":"Manchester City",
+                    "event_group_name":"EPL",
+                    "home":"Chelsea",
+                    "sport":"Soccer",
+                    "start_time":"2020-02-04T18:30:00.000Z"
+                },
+            "provider_info":
+                {
+                    "match_id":60,
+                    "name":"couch-potato",
+                    "pushed":"2020-02-06T18:19:46.000Z",
+                    "source":"direct string input",
+                    "source_file":""
+                },
+            "timestamp":"2020-02-06T18:19:46.000Z",
+            "unique_string":"2020-02-04t18:33:00.000zsoccereplchelseamanchester_citycreate20192020"
+            },
+    "result":"processing"
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
 
