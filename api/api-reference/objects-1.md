@@ -133,5 +133,31 @@ Parameters for new BOS incident message to finish/complete a game and add to Cou
 
 ## Canceled Message
 
+Parameters for new BOS incident message to cancel a game and add to Couch Potato database.
 
+{% tabs %}
+{% tab title="Object" %}
+| Parameter | Description | Type | Required |
+| :--- | :--- | :--- | :--- |
+| `sport` | Sport name | String | Yes |
+| `league` | League \(Event Group\) of sport | String | Yes |
+| `home` | Home team name | String | Yes |
+| `away` | Away team name | String | Yes |
+| `start_time` | Start date/time of game | Date | Yes |
+| `match_id` | Unique match identifier | Number | No |
+{% endtab %}
+
+{% tab title="Example" %}
+```csharp
+{
+  "sport": "Soccer",
+  "league": "EPL",
+  "home": "Norwich City",
+  "away": "Manchester City",
+  "start_time": "2020-02-04T18:33:00.000Z",
+  "match_id": 60,
+}
+```
+{% endtab %}
+{% endtabs %}
 
