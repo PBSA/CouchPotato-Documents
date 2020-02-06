@@ -1,6 +1,8 @@
 # Objects
 
-The following objects form the message bodies for the five corresponding API endpoints:
+## BOS Objects
+
+The following objects are used to pass data to the following five API endpoints, or objects from response messages for:
 
 * \`\`[`add_Game`](./#add_game)\`\`
 * \`\`[`start_Game`](./#start_game)\`\`
@@ -8,7 +10,7 @@ The following objects form the message bodies for the five corresponding API end
 * `finish_Game`
 * `cancel_Game`
 
-## Create \(Add\) Message
+### Create \(Add\) Message
 
 Parameters for new BOS incident message to create a game and add to Couch Potato database.
 
@@ -40,7 +42,7 @@ Parameters for new BOS incident message to create a game and add to Couch Potato
 {% endtab %}
 {% endtabs %}
 
-## In Progress \(Start\) Message
+### In Progress \(Start\) Message
 
 Parameters for new BOS incident message to start a game and add to Couch Potato database.
 
@@ -72,7 +74,7 @@ Parameters for new BOS incident message to start a game and add to Couch Potato 
 {% endtab %}
 {% endtabs %}
 
-## Result Message
+### Result Message
 
 Parameters for new BOS incident message to set the score of a game and add to Couch Potato database.
 
@@ -106,7 +108,7 @@ Parameters for new BOS incident message to set the score of a game and add to Co
 {% endtab %}
 {% endtabs %}
 
-## Finish Message
+### Finish Message
 
 Parameters for new BOS incident message to finish/complete a game and add to Couch Potato database.
 
@@ -139,7 +141,7 @@ Parameters for new BOS incident message to finish/complete a game and add to Cou
 {% endtab %}
 {% endtabs %}
 
-## Cancel\(ed\) Message
+### Cancel\(ed\) Message
 
 Parameters for new BOS incident message to cancel a game and add to Couch Potato database.
 
@@ -168,4 +170,58 @@ Parameters for new BOS incident message to cancel a game and add to Couch Potato
 ```
 {% endtab %}
 {% endtabs %}
+
+### Create Success Response Object
+
+Object attributes from a Success: 200 response.
+
+{% tabs %}
+{% tab title="Attributes" %}
+| Name | Description |
+| :--- | :--- |
+| id | Unique response identifier for the incident |
+| id\_approve | Unique identifier for the incident approval |
+| message | Message body of type [create schema](../bos-schema.md#create) |
+| result | Status of operation - usually "processing" |
+{% endtab %}
+
+{% tab title="Example" %}
+```java
+{
+    "id":"78359ca1-7cf1-4272-abdd-03101d3a0eb1",
+    "id_approve":"4428ac99-e623-4f13-af9a-953c20b0fd97",
+    "message":
+        {
+            "arguments":
+                {
+                    "season":"2019\/2020"
+                },
+            "call":"create",
+            "id":
+                {
+                    "away":"Manchester City",
+                    "event_group_name":"EPL",
+                    "home":"Chelsea",
+                    "sport":"Soccer",
+                    "start_time":"2020-02-04T18:30:00.000Z"
+                },
+            "provider_info":
+                {
+                    "match_id":60,
+                    "name":"couch-potato",
+                    "pushed":"2020-02-06T18:19:46.000Z",
+                    "source":"direct string input",
+                    "source_file":""
+                },
+            "timestamp":"2020-02-06T18:19:46.000Z",
+            "unique_string":"2020-02-04t18:33:00.000zsoccereplchelseamanchester_citycreate20192020"
+            },
+    "result":"processing"
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+## 
 
