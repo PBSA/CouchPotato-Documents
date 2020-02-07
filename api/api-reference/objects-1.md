@@ -2,7 +2,7 @@
 
 ## BOS Objects
 
-The following objects are used to pass data to the following five API endpoints, or objects from response messages for:
+The following objects are used to pass data to, or objects from response messages, the five API endpoints:
 
 * \`\`[`add_game`](./#add_game)\`\`
 * \`\`[`start_game`](./#start_game)\`\`
@@ -10,7 +10,7 @@ The following objects are used to pass data to the following five API endpoints,
 * `finish_Game`
 * `cancel_Game`
 
-### Create \(Add\) 
+### create \(Add\) 
 
 Parameters for new BOS incident message to create a game and add to Couch Potato database.
 
@@ -42,7 +42,7 @@ Parameters for new BOS incident message to create a game and add to Couch Potato
 {% endtab %}
 {% endtabs %}
 
-### In Progress \(Start\) 
+### in\_progress \(Start\) 
 
 Parameters for new BOS incident message to start a game and add to Couch Potato database.
 
@@ -74,7 +74,7 @@ Parameters for new BOS incident message to start a game and add to Couch Potato 
 {% endtab %}
 {% endtabs %}
 
-### Result 
+### result 
 
 Parameters for new BOS incident message to set the score of a game and add to Couch Potato database.
 
@@ -108,7 +108,7 @@ Parameters for new BOS incident message to set the score of a game and add to Co
 {% endtab %}
 {% endtabs %}
 
-### Finish 
+### finish 
 
 Parameters for new BOS incident message to finish/complete a game and add to Couch Potato database.
 
@@ -141,7 +141,7 @@ Parameters for new BOS incident message to finish/complete a game and add to Cou
 {% endtab %}
 {% endtabs %}
 
-### Cancel\(ed\) 
+### canceled
 
 Parameters for new BOS incident message to cancel a game and add to Couch Potato database.
 

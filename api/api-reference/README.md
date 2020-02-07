@@ -16,7 +16,7 @@ POST /add_game/:create_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `create_message`: Object of type [Create](objects-1.md#create-message)
+* `create_message`: Object of type [create](objects-1.md#create-message)
 {% endtab %}
 
 {% tab title="Response" %}
@@ -102,7 +102,7 @@ POST /start_game/:in_progress_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `in_progress_message`: Object of type [In Progress](objects-1.md#in-progress-message)
+* `in_progress_message`: Object of type [in\_progress](objects-1.md#in-progress-message)
 {% endtab %}
 
 {% tab title="Response" %}
