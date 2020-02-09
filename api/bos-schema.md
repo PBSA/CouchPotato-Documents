@@ -132,6 +132,47 @@ These objects are used for the five BOS incident messages. The objects are creat
 {% endtab %}
 {% endtabs %}
 
+## 
+
+## result
+
+{% tabs %}
+{% tab title="Schema" %}
+```javascript
+{
+    "call":,             // Always 'result'
+    "unique_string":,    // unique identifier of type unique_string
+    "timestamp":,        // The date/time the game was created (UTC)
+    "arguments":         
+    {
+         "home_score":,     // The home team score/result
+         "away_score":,     // The away team score/result
+    },
+    "id":
+    {
+        "home":,            // The home team
+        "away":,            // The away team
+        "sport":,           // The sport
+        "start_time":,      // The scheduled date/time for the game to start (UTC)
+        "event_group_name": // The event group (league) 
+    },
+    "provider_info":
+    {
+        "match_id":,        // Unique identifier for the match (game)
+        "name":,            // Name of the provider
+        "source":           // Always 'direct string input'
+        "source_file":,     // Not used
+        "pushed":           // The date/time the incident was sent (UTC)
+    }
+}
+```
+{% endtab %}
+
+{% tab title="Example" %}
+
+{% endtab %}
+{% endtabs %}
+
 ## unique\_string
 
 This special attribute uniquely identifies each game to BOS. The format is as follows:

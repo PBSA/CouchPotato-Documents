@@ -6,7 +6,7 @@ The following objects are used to pass data to, or objects from response message
 
 * \`\`[`add_game`](./#add_game)\`\`
 * \`\`[`start_game`](./#start_game)\`\`
-* `add_Results`
+* \`\`[`add_Score`](./#add_score)\`\`
 * `finish_Game`
 * `cancel_Game`
 
@@ -272,6 +272,27 @@ Object attributes for a 200 response from an [start\_game](./#start_game) call.
     }
 }
 ```
+{% endtab %}
+{% endtabs %}
+
+
+
+### Add Score Success Response 
+
+Object attributes for a 200 response from an [add\_score](./#add_score) call.
+
+{% tabs %}
+{% tab title="Attributes" %}
+| Name | Description |
+| :--- | :--- |
+| id | Unique response identifier for the incident |
+| id\_approve | Unique identifier for the incident approval |
+| message | Message body of type [in\_progress schema](../bos-schema.md#in_progress) |
+| result | Status of operation - usually "processing" |
+{% endtab %}
+
+{% tab title="Example" %}
+
 {% endtab %}
 {% endtabs %}
 
