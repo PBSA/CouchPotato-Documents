@@ -62,11 +62,15 @@
 
 #### **482 - Failed to update game progress**
 
+#### **483 - Game must not have already started**
+
 ### **Add Scores Errors**
 
 #### **485 - Add score parameter error\(s\)**
 
-#### **486 - Failed to add scores**
+#### **486 - Game must be in progress**
+
+#### **487 - Failed to add scores**
 
 ### **Finish Game Errors**
 

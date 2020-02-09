@@ -70,7 +70,8 @@ this.http.post(url + "add_game.php?" , postData, {headers}).map();
       <td style="text-align:left">Add new event if this is the first game.</td>
       <td style="text-align:left">
         <p>200: Success</p>
-        <p>400[472]: Failed to add new event</p>
+        <p>400<a href="error-codes.md#472-failed-to-add-new-event">[472]: Failed to add new event</a>
+        </p>
       </td>
     </tr>
     <tr>
@@ -79,7 +80,8 @@ this.http.post(url + "add_game.php?" , postData, {headers}).map();
       <td style="text-align:left">Add new game</td>
       <td style="text-align:left">
         <p>200: Success</p>
-        <p>400[474]: Failed to add new game</p>
+        <p>400<a href="error-codes.md#474-failed-to-add-new-game">[474]: Failed to add new game</a>
+        </p>
       </td>
     </tr>
     <tr>
@@ -88,7 +90,8 @@ this.http.post(url + "add_game.php?" , postData, {headers}).map();
       <td style="text-align:left">And new progress record. Set status to 0 (Not Started)</td>
       <td style="text-align:left">
         <p>200: Success</p>
-        <p>400[476]: Failed to add progress</p>
+        <p>400<a href="error-codes.md#476-failed-to-update-game-progress">[476]: Failed to add  progress</a>
+        </p>
       </td>
     </tr>
   </tbody>
@@ -152,16 +155,16 @@ http.post(url + "start_game.php?" , postData, {headers}).map();
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><em>games</em>
+      <td style="text-align:left"><em>progress</em>
       </td>
-      <td style="text-align:left">Start existing game by adding <code>whistle_start_time </code>to <code>starttime</code> field</td>
-      <td
-      style="text-align:left">
+      <td style="text-align:left">Add new progress record. Set status to 1 (In Progress)</td>
+      <td style="text-align:left">
         <p>200: Success</p>
-        <p>400[481]: Bad whistle start time
-          <br />
+        <p>400[<a href="error-codes.md#482-failed-to-update-game-progress">482] Failed to add progress record.</a>
+          <br
+          />
         </p>
-        </td>
+      </td>
     </tr>
   </tbody>
 </table>## add\_score
@@ -230,8 +233,9 @@ http.post(url + "start_game.php?" , postData, {headers}).map();
       </td>
       <td style="text-align:left">
         <p>200: Success</p>
-        <p>400[491]: Failed to add score.
-          <br />
+        <p>400<a href="error-codes.md#487-failed-to-add-scores">[487]: Failed to add score.</a>
+          <br
+          />
         </p>
       </td>
     </tr>
