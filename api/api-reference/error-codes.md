@@ -24,9 +24,21 @@
 
 #### **460 - Invalid sport**
 
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 460 |  **Invalid sport \[sport\]** | Try one of: \[list of valid sports\] |
+
 #### **461 - Invalid league**
 
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 461 |  **Invalid league \[league\]** | Try one of: \[list of valid leagues\] |
+
 #### **462 - Invalid home team**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| **462** |  **Invalid home team \[team\]** | Try one of: \[list of valid teams\] |
 
 #### **463 - Invalid away team**
 
