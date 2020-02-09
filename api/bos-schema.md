@@ -169,7 +169,35 @@ These objects are used for the five BOS incident messages. The objects are creat
 {% endtab %}
 
 {% tab title="Example" %}
-
+```java
+{
+    "call":"result",
+    "unique_string":"2020-05-01t01:12:00.000z__soccer__epl__leicester-city__aston-villa__create__20192020",
+    "timestamp":"2020-01-28T14:41:13.705Z",
+    "arguments":
+    {
+         "home_score":4,    
+         "away_score":2,  
+    },
+    "id":
+    {
+        "home":"Leicester City",
+        "away":"Aston Villa",
+        "sport":"Soccer",
+        "start_time":"2020-05-01T01:12:00.000Z",
+        "event_group_name":"EPL"
+    },
+    "provider_info":
+    {
+        "match_id":"25",
+        "name":"couch-potato",
+        "source":
+        "direct string input",
+        "source_file":"",
+        "pushed":"2020-01-28T14:41:13.705Z"
+    }
+}
+```
 {% endtab %}
 {% endtabs %}
 
