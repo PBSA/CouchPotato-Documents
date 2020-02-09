@@ -177,7 +177,7 @@ POST /add_score/:result_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `result_message`: Object of type result
+* `result_message`: Object of type [result](objects-1.md#result)
 {% endtab %}
 
 {% tab title="Response" %}
@@ -208,9 +208,10 @@ postData.league = "EPL";
 postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
-postData.start_time = "2020-02-04T18:33:00.000Z"
-postData.whistle_start_time = "2020-02-04T18:45:00.000Z"
-http.post(url + "start_game.php?" , postData, {headers}).map();
+postData.start_time = "2020-02-04T18:33:00.000Z";
+postData.home_score = 4;
+postData.away_score = 2;
+http.post(url + "add_score.php?" , postData, {headers}).map();
 ```
 {% endtab %}
 {% endtabs %}
