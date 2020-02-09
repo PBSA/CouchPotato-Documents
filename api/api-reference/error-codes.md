@@ -6,58 +6,75 @@
 
 ### **BOS Errors**
 
-| **Sub Code** | Title | Description | Response |
-| :--- | :--- | :--- | :--- |
-| 450 | **Not normalized incident** | Incident message contained either an invalid sport or league \(event group\) |  |
-| 451 |  **Invalid data format** | Incident message was incorrectly formed. |  |
+#### **450 - Not normalized incident**
+
+**Incident message contained either an invalid sport of league \(event group\).**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 450 | Not normalized incident | Object of type [BOS Schema](../bos-schema.md) |
+
+#### **451- Invalid data format**
+
+**Incident message was incorrectly formed.**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 451 |  **Invalid data format** | Object of type [BOS Schema](../bos-schema.md) |
 
 ### **General Errors**
 
-**460 - Invalid sport**
+#### **460 - Invalid sport**
 
-**461 - Invalid league**
+#### **461 - Invalid league**
 
-**462 - Invalid home team**
+#### **462 - Invalid home team**
 
-**463 - Invalid away team**
+#### **463 - Invalid away team**
 
-**464 - Invalid start date/time**
+#### **464 - Invalid start date/time**
 
-**465 - Duplicate teams**
+#### **465 - Duplicate teams**
 
-**466 - Invalid user**
+#### **466 - Invalid user**
 
 ### **Add Game Errors**
 
-**470 - Add new game parameter error\(s\)**
+#### **470 - Add new game parameter error\(s\)**
 
-**471 - Failed to get last event id**
+#### **471 - Failed to get last event id**
 
-**472 - Failed to add new event**
+#### **472 - Failed to add new event**
 
-**473 - Failed to get new event id**
+#### **473 - Failed to get new event id**
 
-**474 - Failed to add new game**
+#### **474 - Failed to add new game**
 
-**475 - Failed to get new game id**
+#### **475 - Failed to get new game id**
 
-**476 - Failed to update game progress**
+#### **476 - Failed to update game progress**
 
 ### **Start Game Errors**
 
-**480 - Start game parameter error\(s\)**
+#### **480 - Start game parameter error\(s\)**
 
-**481 - Bad whistle start time**
+#### **481 - Whistle start time is before start time**
 
-### **Finish/Cancel Game Errors**
+#### **482 - Failed to update game progress**
 
-**490 - Result parameter error\(s\)**
+### **Add Scores Errors**
 
-**491 - Finish parameter error\(s\)**
+#### **485 - Add score parameter error\(s\)**
 
-**492 - Canceled parameter error\(s\)**  
+#### **486 - Failed to add scores**
 
+### **Finish Game Errors**
 
-**495 - Bad whistle end time**  
+#### **491 - Finish parameter error\(s\)**
 
+#### **492 - Whistle end time is before whistle start time**
+
+### **Cancel Game Errors**
+
+#### **495 - Canceled parameter error\(s\)** 
 

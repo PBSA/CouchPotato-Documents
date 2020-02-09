@@ -109,7 +109,7 @@ POST /start_game/:in_progress_message
 * Success 
   * `status`: 200
   * `title`: Game added
-  * `message`: [Success Object](objects-1.md#success-response-object)
+  * `message`: [Start Game Success Object](objects-1.md#start-game-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -120,7 +120,7 @@ POST /start_game/:in_progress_message
 
 * [BOS Errors](error-codes.md#bos-errors)
 * [General Errors](error-codes.md#general-errors)
-* [Add Game Errors](error-codes.md#add-game-errors)
+* [Start Game Errors](error-codes.md#start-game-errors)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -167,10 +167,6 @@ http.post(url + "start_game.php?" , postData, {headers}).map();
 </table>## add\_score
 
 Add scores to a game.
-
-{% hint style="warning" %}
-Note: A game can't be finished unless scores are entered, or the game is canceled. 
-{% endhint %}
 
 ```http
 POST /add_score/:result_message
