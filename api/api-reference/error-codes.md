@@ -42,6 +42,10 @@
 
 #### **463 - Invalid away team**
 
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| **463** |  **Invalid away team \[team\]** | Try one of: \[list of valid teams\] |
+
 #### **464 - Invalid start date/time**
 
 #### **465 - Duplicate teams**
