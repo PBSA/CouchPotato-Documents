@@ -269,7 +269,7 @@ POST /add_score/:finish_game
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `finish_game_message`: Object of type [result](objects-1.md#result)
+* `finish_game_message`: Object of type [finish](objects-1.md#finish)
 {% endtab %}
 
 {% tab title="Response" %}
