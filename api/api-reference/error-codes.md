@@ -90,9 +90,11 @@
 
 ### **Finish Game Errors**
 
-#### **491 - Finish parameter error\(s\)**
+#### **490 - Finish parameter error\(s\)**
 
-#### **492 - Whistle end time is before whistle start time**
+#### **491 - Whistle end time is before whistle start time**
+
+#### **492 - Failed to add whistle end time**
 
 **493 - Failed to update game progress**
 
