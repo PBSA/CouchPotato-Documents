@@ -269,7 +269,7 @@ http.post(url + "add_score.php?" , postData, {headers}).map();
 Finish a game
 
 ```http
-POST /add_score/:finish_game
+POST /finish_game/:finish_game_message
 ```
 
 **Header**
@@ -357,7 +357,7 @@ http.post(url + "add_score.php?" , postData, {headers}).map();
 Cancel a game
 
 ```http
-POST /add_score/:cancel_game
+POST /add_score/:cancel_game_message
 ```
 
 **Header**
@@ -418,21 +418,14 @@ http.post(url + "add_score.php?" , postData, {headers}).map();
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><em>games</em>
-      </td>
-      <td style="text-align:left">Add whistle end time to <code>whistle_end_time</code>
-      </td>
-      <td style="text-align:left">
-        <p>200: Success</p>
-        <p>400[492]: Failed to add whistle end time</p>
-      </td>
-    </tr>
-    <tr>
       <td style="text-align:left"><em>progress</em>
       </td>
-      <td style="text-align:left">Update progress record. Set <code>status</code> to 4 (Finished)</td>
+      <td style="text-align:left">Update progress record. Set <code>status</code> to 2 (Canceled)</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">
+        <p>200: Success</p>
+        <p>400[496]: Failed to update progress record</p>
+        </td>
     </tr>
   </tbody>
 </table>
