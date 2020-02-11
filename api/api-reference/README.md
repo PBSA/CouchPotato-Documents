@@ -286,8 +286,8 @@ POST /add_score/:finish_game
 {% tab title="Response" %}
 * Success 
   * `status`: 200
-  * `title`: Game added
-  * `message`: [Add Score Success Response](objects-1.md#add-score-success-response)
+  * `title`: Game finished
+  * `message`: [Finish game success response](objects-1.md#finish-game-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
