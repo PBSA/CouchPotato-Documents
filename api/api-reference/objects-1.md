@@ -259,7 +259,11 @@ Object attributes for a 200 response from an [finish\_game](./#finish_game) call
 
 {% tab title="Example" %}
 ```java
-{"status":"200","title":"Game finished","message":"Liverpool v Arsenal - [whistle_end_time]2020-02-03T22:45:00.000Z"}
+{
+    "status":"200",
+    "title":"Game finished",
+    "message":"Liverpool v Arsenal - [whistle_end_time]2020-02-03T22:45:00.000Z"
+}
 ```
 {% endtab %}
 {% endtabs %}

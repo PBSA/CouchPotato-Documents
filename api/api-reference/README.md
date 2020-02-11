@@ -87,12 +87,13 @@ this.http.post(url + "add_game.php?" , postData, {headers}).map();
     <tr>
       <td style="text-align:left"><em>progress</em>
       </td>
-      <td style="text-align:left">And new progress record. Set status to 0 (Not Started)</td>
-      <td style="text-align:left">
+      <td style="text-align:left">And new progress record. Set <code>status</code> to 0 (Not Started)</td>
+      <td
+      style="text-align:left">
         <p>200: Success</p>
         <p>400<a href="error-codes.md#476-failed-to-update-game-progress">[476]: Failed to add  progress</a>
         </p>
-      </td>
+        </td>
     </tr>
   </tbody>
 </table>## start\_game
@@ -163,13 +164,23 @@ http.post(url + "start_game.php?" , postData, {headers}).map();
     <tr>
       <td style="text-align:left"><em>progress</em>
       </td>
-      <td style="text-align:left">Add new progress record. Set status to 1 (In Progress)</td>
+      <td style="text-align:left">Update progress record. Set <code>status</code> to 1 (In Progress)</td>
+      <td
+      style="text-align:left">
+        <p>200: Success</p>
+        <p>400[<a href="error-codes.md#482-failed-to-update-game-progress">483] Failed to update progress record.</a>
+        </p>
+        </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>games</em>
+      </td>
+      <td style="text-align:left">Add whistle start time to <code>whistle_start_time</code>
+      </td>
       <td style="text-align:left">
         <p>200: Success</p>
-        <p>400[<a href="error-codes.md#482-failed-to-update-game-progress">482] Failed to add progress record.</a>
-          <br
-          />
-        </p>
+        <p>400[<a href="error-codes.md#482-failed-to-update-game-progress">482]</a> Failed
+          to add whistle start time.</p>
       </td>
     </tr>
   </tbody>
@@ -320,15 +331,26 @@ http.post(url + "add_score.php?" , postData, {headers}).map();
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><em>progress</em>
+      <td style="text-align:left"><em>games</em>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Add whistle end time to <code>whistle_end_time</code>
+      </td>
       <td style="text-align:left">
         <p>200: Success</p>
-        <p>400
+        <p>400[492]: Failed to add whistle end time</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>progress</em>
+      </td>
+      <td style="text-align:left">Update progress record. Set <code>status</code> to 4 (Finished)</td>
+      <td
+      style="text-align:left">
+        <p>200: Success</p>
+        <p>400[493]: Failed to update progress record
           <br />
         </p>
-      </td>
+        </td>
     </tr>
   </tbody>
 </table>
