@@ -268,3 +268,17 @@ Object attributes for a 200 response from an [finish\_game](./#finish_game) call
 {% endtab %}
 {% endtabs %}
 
+### Cancel Game Success Response 
+
+Object attributes for a 200 response from an [cancel\_game](./#cancel_game) call.
+
+{% tabs %}
+{% tab title="Attributes" %}
+| Name | Text |
+| :--- | :--- |
+| status | Always 200 |
+| title | Game finished |
+| message | \[home \] v \[away \] - \[whistle\_end\_time\] |
+{% endtab %}
+{% endtabs %}
+
