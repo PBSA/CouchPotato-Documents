@@ -170,6 +170,8 @@ Parameters for new BOS incident message to cancel a game and add to Couch Potato
 {% endtab %}
 {% endtabs %}
 
+## Success Response Objects
+
 ### Add Game Success Response 
 
 Object attributes for a 200 response from an [add\_game](./#add_game) call.
@@ -222,7 +224,31 @@ Object attributes for a 200 response from an [start\_game](./#start_game) call.
 
 Object attributes for a 200 response from an [add\_score](./#add_score) call.
 
-{"status":"200","title":"Scores added","message":"Chelsea 4 v Arsenal 2"}
+{% tabs %}
+{% tab title="Attributes" %}
+| Name | Text |
+| :--- | :--- |
+| status | Always 200 |
+| title | Scores added |
+| message | \[home \] \[home\_score\]v \[away \]\[away\_score\]  |
+{% endtab %}
+
+{% tab title="Example" %}
+```java
+{
+    "status":"200",
+    "title":"Scores added",
+    "message":"Chelsea 4 v Arsenal 2"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Finish Game Success Response 
+
+Object attributes for a 200 response from an [finish\_game](./#finish_game) call.
+
+{"status":"200","title":"Game finished","message":"Liverpool v Arsenal - \[whistle\_end\_time\]2020-02-03T22:45:00.000Z"}
 
 {% tabs %}
 {% tab title="Attributes" %}
@@ -236,37 +262,9 @@ Object attributes for a 200 response from an [add\_score](./#add_score) call.
 {% tab title="Example" %}
 ```java
 {
-    "id":"78359ca1-7cf1-4272-abdd-03101d3a0eb1",
-    "id_approve":"4428ac99-e623-4f13-af9a-953c20b0fd97",
-    "message":
-        {
-            "arguments":
-                {
-                   "home_score": 4,
-                   "away_score": 2
-                },
-            "call":"create",
-            "id":
-                {
-                    "away":"Manchester City",
-                    "event_group_name":"EPL",
-                    "home":"Chelsea",
-                    "sport":"Soccer",
-                    "start_time":"2020-02-04T18:30:00.000Z"
-                },
-            "provider_info":
-                {
-                    "match_id":60,
-                    "name":"couch-potato",
-                    "pushed":"2020-02-06T18:19:46.000Z",
-                    "source":"direct string input",
-                    "source_file":""
-                },
-            "timestamp":"2020-02-06T18:19:46.000Z",
-            "unique_string":"2020-02-04t18:33:00.000zsoccereplchelseamanchester_citycreate20192020"
-            },
-    "result":"processing"
-    }
+    "status":"200",
+    "title":"Scores added",
+    "message":"Chelsea 4 v Arsenal 2"
 }
 ```
 {% endtab %}
