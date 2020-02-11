@@ -100,5 +100,7 @@
 
 ### **Cancel Game Errors**
 
-#### **495 - Canceled parameter error\(s\)** 
+#### **495 - Canceled parameter error\(s\)**
+
+#### **496 - Failed to update game progress** 
 
