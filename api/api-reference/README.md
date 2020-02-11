@@ -21,9 +21,7 @@ POST /add_game/:create_message
 
 {% tab title="Response" %}
 * Success 
-  * `status`: 200
-  * `title`: Game added
-  * `message`[: Add Game Success Response](objects-1.md#add-game-success-response)
+  * \`\`[Add Game Success Response](objects-1.md#add-game-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -47,7 +45,7 @@ postData.league = "EPL";
 postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
-postData.start_time = "2020-02-04T18:33:00.000Z"
+postData.start_time = "2020-02-04T18:33:00.000Z";
 this.http.post(url + "add_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}
@@ -117,9 +115,7 @@ POST /start_game/:in_progress_message
 
 {% tab title="Response" %}
 * Success 
-  * `status`: 200
-  * `title`: Game added
-  * `message`: [Start Game Success Response](objects-1.md#start-game-success-response)
+  *  [Start Game Success Response](objects-1.md#start-game-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -143,8 +139,9 @@ postData.league = "EPL";
 postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
-postData.start_time = "2020-02-04T18:33:00.000Z"
-postData.whistle_start_time = "2020-02-04T18:45:00.000Z"
+postData.start_time = "2020-02-04T18:33:00.000Z";
+postData.whistle_start_time = "2020-02-04T18:45:00.000Z";
+postData.match_id: 24;
 http.post(url + "start_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}
@@ -205,9 +202,7 @@ POST /add_score/:result_message
 
 {% tab title="Response" %}
 * Success 
-  * `status`: 200
-  * `title`: Game added
-  * `message`: [Add Score Success Response](objects-1.md#add-score-success-response)
+  *  [Add Score Success Response](objects-1.md#add-score-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -234,6 +229,7 @@ postData.away = "Manchester United";
 postData.start_time = "2020-02-04T18:33:00.000Z";
 postData.home_score = 4;
 postData.away_score = 2;
+postData.match_id: 24;
 http.post(url + "add_score.php?" , postData, {headers}).map();
 ```
 {% endtab %}
@@ -285,9 +281,7 @@ POST /finish_game/:finish_game_message
 
 {% tab title="Response" %}
 * Success 
-  * `status`: 200
-  * `title`: Game finished
-  * `message`: [Finish game success response](objects-1.md#finish-game-success-response)
+  *  [Finish game success response](objects-1.md#finish-game-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -313,7 +307,8 @@ postData.home = "Chelsea";
 postData.away = "Manchester United";
 postData.start_time = "2020-02-04T18:33:00.000Z";
 postData.whistle_end_time = "2020-02-04T20:33:00.000Z";
-http.post(url + "add_score.php?" , postData, {headers}).map();
+postData.match_id: 24;
+http.post(url + "finish_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}
 {% endtabs %}
@@ -398,6 +393,7 @@ postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
 postData.start_time = "2020-02-04T18:33:00.000Z";
+postData.match_id: 24;
 http.post(url + "cancel_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}
