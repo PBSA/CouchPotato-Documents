@@ -277,8 +277,18 @@ Object attributes for a 200 response from an [cancel\_game](./#cancel_game) call
 | Name | Text |
 | :--- | :--- |
 | status | Always 200 |
-| title | Game finished |
-| message | \[home \] v \[away \] - \[whistle\_end\_time\] |
+| title | Game canceled |
+| message | \[home \] v \[away \] |
+{% endtab %}
+
+{% tab title="Example" %}
+```java
+{
+    "status":"200",
+    "title":"Game canceled",
+    "message":"Arsenal v Liverpool"
+}
+```
 {% endtab %}
 {% endtabs %}
 
