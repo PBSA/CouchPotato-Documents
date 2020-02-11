@@ -248,24 +248,18 @@ Object attributes for a 200 response from an [add\_score](./#add_score) call.
 
 Object attributes for a 200 response from an [finish\_game](./#finish_game) call.
 
-{"status":"200","title":"Game finished","message":"Liverpool v Arsenal - \[whistle\_end\_time\]2020-02-03T22:45:00.000Z"}
-
 {% tabs %}
 {% tab title="Attributes" %}
 | Name | Text |
 | :--- | :--- |
 | status | Always 200 |
-| title | Scores added |
-| message | \[home \] \[home\_score\]v \[away \]\[away\_score\]  |
+| title | Game finished |
+| message | \[home \] v \[away \] - \[whistle\_end\_time\] |
 {% endtab %}
 
 {% tab title="Example" %}
 ```java
-{
-    "status":"200",
-    "title":"Scores added",
-    "message":"Chelsea 4 v Arsenal 2"
-}
+{"status":"200","title":"Game finished","message":"Liverpool v Arsenal - [whistle_end_time]2020-02-03T22:45:00.000Z"}
 ```
 {% endtab %}
 {% endtabs %}
