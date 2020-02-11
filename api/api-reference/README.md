@@ -312,8 +312,7 @@ postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
 postData.start_time = "2020-02-04T18:33:00.000Z";
-postData.home_score = 4;
-postData.away_score = 2;
+postData.whistle_end_time = "2020-02-04T20:33:00.000Z";
 http.post(url + "add_score.php?" , postData, {headers}).map();
 ```
 {% endtab %}
