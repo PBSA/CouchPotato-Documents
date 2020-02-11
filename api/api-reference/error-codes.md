@@ -1,5 +1,9 @@
 # Error Codes
 
+## **General Errors**
+
+### **430 -** 
+
 ## **BOS Errors**
 
 ### **450 - Not normalized incident**
@@ -18,7 +22,7 @@
 | :--- | :--- | :--- |
 | 451 |  Invalid data format | Object of type [BOS Schema](../bos-schema.md) |
 
-## **General Errors**
+## **Incident Errors**
 
 ### **460 - Invalid sport**
 
