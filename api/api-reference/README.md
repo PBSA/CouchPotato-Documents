@@ -16,12 +16,14 @@ POST /add_game/:create_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* **`create_message`**: Object of type [create](objects-1.md#create-message)
+* `create_message`: Object of type [create](objects-1.md#create-message)
 {% endtab %}
 
 {% tab title="Response" %}
 * Success 
-  * \`\`[Add Game Success Response](objects-1.md#add-game-success-response)
+  * `status`: 200
+  * `title`: Game added
+  * `message`[: Add Game Success Response](objects-1.md#add-game-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -45,7 +47,7 @@ postData.league = "EPL";
 postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
-postData.start_time = "2020-02-04T18:33:00.000Z";
+postData.start_time = "2020-02-04T18:33:00.000Z"
 this.http.post(url + "add_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}
@@ -85,13 +87,12 @@ this.http.post(url + "add_game.php?" , postData, {headers}).map();
     <tr>
       <td style="text-align:left"><em>progress</em>
       </td>
-      <td style="text-align:left">And new progress record. Set <code>status</code> to 0 (Not Started)</td>
-      <td
-      style="text-align:left">
+      <td style="text-align:left">And new progress record. Set status to 0 (Not Started)</td>
+      <td style="text-align:left">
         <p>200: Success</p>
         <p>400<a href="error-codes.md#476-failed-to-update-game-progress">[476]: Failed to add  progress</a>
         </p>
-        </td>
+      </td>
     </tr>
   </tbody>
 </table>## start\_game
@@ -110,12 +111,14 @@ POST /start_game/:in_progress_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* **`in_progress_message`**: Object of type [in\_progress](objects-1.md#in-progress-message)
+* `in_progress_message`: Object of type [in\_progress](objects-1.md#in-progress-message)
 {% endtab %}
 
 {% tab title="Response" %}
 * Success 
-  *  [Start Game Success Response](objects-1.md#start-game-success-response)
+  * `status`: 200
+  * `title`: Game added
+  * `message`: [Start Game Success Response](objects-1.md#start-game-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -139,9 +142,8 @@ postData.league = "EPL";
 postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
-postData.start_time = "2020-02-04T18:33:00.000Z";
-postData.whistle_start_time = "2020-02-04T18:45:00.000Z";
-postData.match_id: 24;
+postData.start_time = "2020-02-04T18:33:00.000Z"
+postData.whistle_start_time = "2020-02-04T18:45:00.000Z"
 http.post(url + "start_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}
@@ -161,23 +163,13 @@ http.post(url + "start_game.php?" , postData, {headers}).map();
     <tr>
       <td style="text-align:left"><em>progress</em>
       </td>
-      <td style="text-align:left">Update progress record. Set <code>status</code> to 1 (In Progress)</td>
-      <td
-      style="text-align:left">
-        <p>200: Success</p>
-        <p>400[<a href="error-codes.md#482-failed-to-update-game-progress">483] Failed to update progress record.</a>
-        </p>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><em>games</em>
-      </td>
-      <td style="text-align:left">Add whistle start time to <code>whistle_start_time</code>
-      </td>
+      <td style="text-align:left">Add new progress record. Set status to 1 (In Progress)</td>
       <td style="text-align:left">
         <p>200: Success</p>
-        <p>400[<a href="error-codes.md#482-failed-to-update-game-progress">482]</a> Failed
-          to add whistle start time.</p>
+        <p>400[<a href="error-codes.md#482-failed-to-update-game-progress">482] Failed to add progress record.</a>
+          <br
+          />
+        </p>
       </td>
     </tr>
   </tbody>
@@ -197,12 +189,14 @@ POST /add_score/:result_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* **`result_message`**: Object of type [result](objects-1.md#result)
+* `result_message`: Object of type [result](objects-1.md#result)
 {% endtab %}
 
 {% tab title="Response" %}
 * Success 
-  *  [Add Score Success Response](objects-1.md#add-score-success-response)
+  * `status`: 200
+  * `title`: Game added
+  * `message`: [Add Score Success Response](objects-1.md#add-score-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -229,7 +223,6 @@ postData.away = "Manchester United";
 postData.start_time = "2020-02-04T18:33:00.000Z";
 postData.home_score = 4;
 postData.away_score = 2;
-postData.match_id: 24;
 http.post(url + "add_score.php?" , postData, {headers}).map();
 ```
 {% endtab %}
@@ -265,7 +258,7 @@ http.post(url + "add_score.php?" , postData, {headers}).map();
 Finish a game
 
 ```http
-POST /finish_game/:finish_game_message
+POST /add_score/:finish_game
 ```
 
 **Header**
@@ -276,12 +269,14 @@ POST /finish_game/:finish_game_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* **`finish_game_message`**: Object of type [finish](objects-1.md#finish)
+* `finish_game_message`: Object of type [finish](objects-1.md#finish)
 {% endtab %}
 
 {% tab title="Response" %}
 * Success 
-  *  [Finish game success response](objects-1.md#finish-game-success-response)
+  * `status`: 200
+  * `title`: Game added
+  * `message`: [Add Score Success Response](objects-1.md#add-score-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -306,9 +301,9 @@ postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
 postData.start_time = "2020-02-04T18:33:00.000Z";
-postData.whistle_end_time = "2020-02-04T20:33:00.000Z";
-postData.match_id: 24;
-http.post(url + "finish_game.php?" , postData, {headers}).map();
+postData.home_score = 4;
+postData.away_score = 2;
+http.post(url + "add_score.php?" , postData, {headers}).map();
 ```
 {% endtab %}
 {% endtabs %}
@@ -325,100 +320,15 @@ http.post(url + "finish_game.php?" , postData, {headers}).map();
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><em>games</em>
+      <td style="text-align:left"><em>progress</em>
       </td>
-      <td style="text-align:left">Add whistle end time to <code>whistle_end_time</code>
-      </td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">
         <p>200: Success</p>
-        <p>400[492]: Failed to add whistle end time</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><em>progress</em>
-      </td>
-      <td style="text-align:left">Update progress record. Set <code>status</code> to 4 (Finished)</td>
-      <td
-      style="text-align:left">
-        <p>200: Success</p>
-        <p>400[493]: Failed to update progress record
+        <p>400
           <br />
         </p>
-        </td>
-    </tr>
-  </tbody>
-</table>## cancel\_game
-
-Cancel a game
-
-```http
-POST /add_score/:cancel_game_message
-```
-
-**Header**
-
-```http
-{'Content-Type' : 'application/json'}
-```
-
-{% tabs %}
-{% tab title="Parameters" %}
-* **`cancel_game_message`**: Object of type [canceled](objects-1.md#canceled)
-{% endtab %}
-
-{% tab title="Response" %}
-* Success 
-  * [Cancel game success response](objects-1.md#cancel-game-success-response)
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  One of **`Error Objects`**
-  * `title`: One of ``**`Error Objects`**
-  * `message`: One of **`Error Objects`**
-
-**`Error Objects`**
-
-* [BOS Errors](error-codes.md#bos-errors)
-* [General Errors](error-codes.md#general-errors)
-* [Add Game Errors](error-codes.md#add-game-errors)
-{% endtab %}
-
-{% tab title="Example" %}
-```typescript
-var http: HttpClient;
-var headers = new HttpHeaders({'Content-Type' : 'application/json'});
-var postData:any = {};
-postData.sport = "Soccer";
-postData.league = "EPL";
-postData.user = 1;
-postData.home = "Chelsea";
-postData.away = "Manchester United";
-postData.start_time = "2020-02-04T18:33:00.000Z";
-postData.match_id: 24;
-http.post(url + "cancel_game.php?" , postData, {headers}).map();
-```
-{% endtab %}
-{% endtabs %}
-
-**Database Operations**
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Table</th>
-      <th style="text-align:left">Operation</th>
-      <th style="text-align:left">Response</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><em>progress</em>
       </td>
-      <td style="text-align:left">Update progress record. Set <code>status</code> to 2 (Canceled)</td>
-      <td
-      style="text-align:left">
-        <p>200: Success</p>
-        <p>400[496]: Failed to update progress record</p>
-        </td>
     </tr>
   </tbody>
 </table>

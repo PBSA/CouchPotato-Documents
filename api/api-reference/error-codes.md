@@ -46,7 +46,11 @@
 | :--- | :--- | :--- |
 | **463** |  **Invalid away team \[team\]** | Try one of: \[list of valid teams\] |
 
-#### **464 - Invalid start date/time**
+#### **464 - Invalid start time**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| **464** |  **Invalid start time** | Format is \[YYYY-MM-DDTHH:MM:SS.00Z\] |
 
 #### **465 - Duplicate teams**
 
@@ -90,13 +94,17 @@
 
 ### **Finish Game Errors**
 
-#### **491 - Finish parameter error\(s\)**
+#### **490 - Finish parameter error\(s\)**
 
-#### **492 - Whistle end time is before whistle start time**
+#### **491 - Whistle end time is before whistle start time**
+
+#### **492 - Failed to add whistle end time**
 
 **493 - Failed to update game progress**
 
 ### **Cancel Game Errors**
 
-#### **495 - Canceled parameter error\(s\)** 
+#### **495 - Canceled parameter error\(s\)**
+
+#### **496 - Failed to update game progress** 
 
