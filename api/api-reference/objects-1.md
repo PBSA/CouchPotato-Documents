@@ -1,14 +1,16 @@
 # Objects
 
-The following objects form the message bodies for the five corresponding API endpoints:
+## BOS Objects
 
-* \`\`[`add_Game`](./#add_game)\`\`
-* \`\`[`start_Game`](./#start_game)\`\`
-* `add_Results`
-* `finish_Game`
-* `cancel_Game`
+The following objects are used to pass data to, or objects from response messages, the five API endpoints:
 
-## Create \(Add\) Message
+* \`\`[`add_game`](./#add_game)\`\`
+* \`\`[`start_game`](./#start_game)\`\`
+* \`\`[`add_Score`](./#add_score)\`\`
+* \`\`[`finish_Game`](./#finish_game)\`\`
+* \`\`[`cancel_Game`](./#cancel_game)\`\`
+
+### create
 
 Parameters for new BOS incident message to create a game and add to Couch Potato database.
 
@@ -22,7 +24,6 @@ Parameters for new BOS incident message to create a game and add to Couch Potato
 | `away` | Away team name | String | Yes |
 | `start_time` | Start date/time of game | Date | Yes |
 | `user` | Current user id | Number | Yes |
-| `match_id` | Unique match identifier | Number | No |
 {% endtab %}
 
 {% tab title="Example" %}
@@ -40,7 +41,7 @@ Parameters for new BOS incident message to create a game and add to Couch Potato
 {% endtab %}
 {% endtabs %}
 
-## In Progress \(Start\) Message
+### in\_progress
 
 Parameters for new BOS incident message to start a game and add to Couch Potato database.
 
@@ -54,7 +55,7 @@ Parameters for new BOS incident message to start a game and add to Couch Potato 
 | `away` | Away team name | String | Yes |
 | `start_time` | Start date/time of game | Date | Yes |
 | `whistle_start_time` | Actual time the game started | Date | Yes |
-| `match_id` | Unique match identifier | Number | No |
+| `match_id` | Unique match identifier | Number | Yes |
 {% endtab %}
 
 {% tab title="Example" %}
@@ -72,7 +73,7 @@ Parameters for new BOS incident message to start a game and add to Couch Potato 
 {% endtab %}
 {% endtabs %}
 
-## Result Message
+### result 
 
 Parameters for new BOS incident message to set the score of a game and add to Couch Potato database.
 
@@ -87,7 +88,7 @@ Parameters for new BOS incident message to set the score of a game and add to Co
 | `start_time` | Start date/time of game | Date | Yes |
 | `home_score` | The score for the home team | Number | Yes |
 | `away_score` | The score for the away team | Number | Yes |
-| `match_id` | Unique match identifier | Number | No |
+| `match_id` | Unique match identifier | Number | Yes |
 {% endtab %}
 
 {% tab title="Example" %}
@@ -106,7 +107,7 @@ Parameters for new BOS incident message to set the score of a game and add to Co
 {% endtab %}
 {% endtabs %}
 
-## Finish Message
+### finish 
 
 Parameters for new BOS incident message to finish/complete a game and add to Couch Potato database.
 
@@ -121,7 +122,7 @@ Parameters for new BOS incident message to finish/complete a game and add to Cou
 | `start_time` | Start date/time of game | Date | Yes |
 | `whistle_end_time` | The time the game ended | Date | Yes |
 | `away_score` | The score for the away team | Number | Yes |
-| `match_id` | Unique match identifier | Number | No |
+| `match_id` | Unique match identifier | Number | Yes |
 {% endtab %}
 
 {% tab title="Example" %}
@@ -139,7 +140,7 @@ Parameters for new BOS incident message to finish/complete a game and add to Cou
 {% endtab %}
 {% endtabs %}
 
-## Cancel\(ed\) Message
+### canceled
 
 Parameters for new BOS incident message to cancel a game and add to Couch Potato database.
 
@@ -152,7 +153,7 @@ Parameters for new BOS incident message to cancel a game and add to Couch Potato
 | `home` | Home team name | String | Yes |
 | `away` | Away team name | String | Yes |
 | `start_time` | Start date/time of game | Date | Yes |
-| `match_id` | Unique match identifier | Number | No |
+| `match_id` | Unique match identifier | Number | Yes |
 {% endtab %}
 
 {% tab title="Example" %}
@@ -164,6 +165,104 @@ Parameters for new BOS incident message to cancel a game and add to Couch Potato
   "away": "Manchester City",
   "start_time": "2020-02-04T18:33:00.000Z",
   "match_id": 60,
+}
+```
+{% endtab %}
+{% endtabs %}
+
+## Success Response Objects
+
+### Add Game Success Response 
+
+Object attributes for a 200 response from an [add\_game](./#add_game) call.
+
+{% tabs %}
+{% tab title="Attributes" %}
+| Name | Text |
+| :--- | :--- |
+| status | Always 200 |
+| title | Game added |
+| message | \[home \] v \[away \] - \[start\_time\] |
+{% endtab %}
+
+{% tab title="Example" %}
+```java
+{
+    "status":"200",
+    "title":"Game added",
+    "message":"Arsenal v Liverpool - 2020-02-25T01:33:00.000Z"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Start Game Success Response 
+
+Object attributes for a 200 response from an [start\_game](./#start_game) call.
+
+{% tabs %}
+{% tab title="Attributes" %}
+| Name | Text |
+| :--- | :--- |
+| status | Always 200 |
+| title | Game started |
+| message | \[home \] v \[away \] - \[whistle\_start\_time\] |
+{% endtab %}
+
+{% tab title="Example" %}
+```java
+{
+    "status":"200",
+    "title":"Game started",
+    "message":"Chelsea v Chelsea - [whistle_start_time]2020-02-04T18:05:47.736Z"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Add Score Success Response 
+
+Object attributes for a 200 response from an [add\_score](./#add_score) call.
+
+{% tabs %}
+{% tab title="Attributes" %}
+| Name | Text |
+| :--- | :--- |
+| status | Always 200 |
+| title | Scores added |
+| message | \[home \] \[home\_score\]v \[away \]\[away\_score\]  |
+{% endtab %}
+
+{% tab title="Example" %}
+```java
+{
+    "status":"200",
+    "title":"Scores added",
+    "message":"Chelsea 4 v Arsenal 2"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Finish Game Success Response 
+
+Object attributes for a 200 response from an [finish\_game](./#finish_game) call.
+
+{% tabs %}
+{% tab title="Attributes" %}
+| Name | Text |
+| :--- | :--- |
+| status | Always 200 |
+| title | Game finished |
+| message | \[home \] v \[away \] - \[whistle\_end\_time\] |
+{% endtab %}
+
+{% tab title="Example" %}
+```java
+{
+    "status":"200",
+    "title":"Game finished",
+    "message":"Liverpool v Arsenal - [whistle_end_time]2020-02-03T22:45:00.000Z"
 }
 ```
 {% endtab %}
