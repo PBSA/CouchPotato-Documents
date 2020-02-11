@@ -16,7 +16,7 @@ POST /add_game/:create_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `create_message`: Object of type [create](objects-1.md#create-message)
+* **`create_message`**: Object of type [create](objects-1.md#create-message)
 {% endtab %}
 
 {% tab title="Response" %}
@@ -112,7 +112,7 @@ POST /start_game/:in_progress_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `in_progress_message`: Object of type [in\_progress](objects-1.md#in-progress-message)
+* **`in_progress_message`**: Object of type [in\_progress](objects-1.md#in-progress-message)
 {% endtab %}
 
 {% tab title="Response" %}
@@ -200,7 +200,7 @@ POST /add_score/:result_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `result_message`: Object of type [result](objects-1.md#result)
+* **`result_message`**: Object of type [result](objects-1.md#result)
 {% endtab %}
 
 {% tab title="Response" %}
@@ -280,7 +280,7 @@ POST /add_score/:finish_game
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `finish_game_message`: Object of type [finish](objects-1.md#finish)
+* **`finish_game_message`**: Object of type [finish](objects-1.md#finish)
 {% endtab %}
 
 {% tab title="Response" %}
@@ -350,6 +350,89 @@ http.post(url + "add_score.php?" , postData, {headers}).map();
           <br />
         </p>
         </td>
+    </tr>
+  </tbody>
+</table>## cancel\_game
+
+Cancel a game
+
+```http
+POST /add_score/:cancel_game
+```
+
+**Header**
+
+```http
+{'Content-Type' : 'application/json'}
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+* **`cancel_game_message`**: Object of type [canceled](objects-1.md#canceled)
+{% endtab %}
+
+{% tab title="Response" %}
+* Success 
+  * `status`: 200
+  * `title`: Game finished
+  * `message`: [Finish game success response](objects-1.md#finish-game-success-response)
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  One of **`Error Objects`**
+  * `title`: One of ``**`Error Objects`**
+  * `message`: One of **`Error Objects`**
+
+**`Error Objects`**
+
+* [BOS Errors](error-codes.md#bos-errors)
+* [General Errors](error-codes.md#general-errors)
+* [Add Game Errors](error-codes.md#add-game-errors)
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+var http: HttpClient;
+var headers = new HttpHeaders({'Content-Type' : 'application/json'});
+var postData:any = {};
+postData.sport = "Soccer";
+postData.league = "EPL";
+postData.user = 1;
+postData.home = "Chelsea";
+postData.away = "Manchester United";
+postData.start_time = "2020-02-04T18:33:00.000Z";
+postData.whistle_end_time = "2020-02-04T20:33:00.000Z";
+http.post(url + "add_score.php?" , postData, {headers}).map();
+```
+{% endtab %}
+{% endtabs %}
+
+**Database Operations**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Table</th>
+      <th style="text-align:left">Operation</th>
+      <th style="text-align:left">Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><em>games</em>
+      </td>
+      <td style="text-align:left">Add whistle end time to <code>whistle_end_time</code>
+      </td>
+      <td style="text-align:left">
+        <p>200: Success</p>
+        <p>400[492]: Failed to add whistle end time</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><em>progress</em>
+      </td>
+      <td style="text-align:left">Update progress record. Set <code>status</code> to 4 (Finished)</td>
+      <td
+      style="text-align:left"></td>
     </tr>
   </tbody>
 </table>
