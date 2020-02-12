@@ -466,7 +466,34 @@ this.http.get(this.url + "get_all_data_by_date_range.php", {
 
 ## get\_games\_by\_league
 
+Get all games for a certain league.
 
+```http
+GET /get_games_by_league/:league
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+* **`league:`** `The sport league (event group).`
+{% endtab %}
+
+{% tab title="Response" %}
+* Success 
+  * 200 - List of all games for `league`
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+this.http.get(this.url + "get_all_data_by_date_range.php", {
+        params:{league: "NFL" }}).map();
+```
+{% endtab %}
+{% endtabs %}
 
 get\_leagues\_by\_sport
 
