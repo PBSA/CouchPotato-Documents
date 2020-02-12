@@ -258,7 +258,7 @@ postData.home = "Chelsea";
 postData.away = "Manchester United";
 postData.start_time = "2020-02-04T18:33:00.000Z";
 postData.match_id: 24;
-http.post(url + "cancel_game.php?" , postData, {headers}).map();
+http.post(url + "cancel_game.php" , postData, {headers}).map();
 ```
 {% endtab %}
 {% endtabs %}
@@ -297,10 +297,9 @@ DELETE /delete_event/:date/:league
 ```typescript
 var http: HttpClient;
 var headers = new HttpHeaders({'Content-Type' : 'application/x-www-form-urlencoded'});
-var postData:any = {};
-postData.date = "2020-02-29";
-postData.league = "EPL";
-http.post(url + "delete_event.php?" , postData, {headers}).map();
+let httpParams = new HttpParams().set('date', '2020-02-29', 'league', 'EPL');
+return this.http.delete(this.url + "delete_event.php", { 
+        params: httpParams, headers: headers});
 ```
 {% endtab %}
 {% endtabs %}
@@ -338,14 +337,12 @@ DELETE /delete_game/:game_id
 ```typescript
 var http: HttpClient;
 var headers = new HttpHeaders({'Content-Type' : 'application/x-www-form-urlencoded'});
-var postData:any = {};
-postData.game_id= 24;
-http.post(url + "delete_event.php?" , postData, {headers}).map();
+let httpParams = new HttpParams().set('game_id', 24);
+return this.http.delete(this.url + "delete_game.php", { 
+        params: httpParams, headers: headers});
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 ## get\_all\_data\_by\_date\_range
 
@@ -355,27 +352,115 @@ Get all games data between a date range.
 GET /get_all_data_by_date_range/:start_date/:end_date
 ```
 
-**Header**
+{% tabs %}
+{% tab title="Parameters" %}
+* **`start_date`**: The start of the date range. Format is YYYY-MM-DDTHH:MM:SS.000Z
+* **`end_date`**: The end of the date range. Format is YYYY-MM-DDTHH:MM:SS.000Z
+{% endtab %}
+
+{% tab title="Response" %}
+* Success 
+  * 200 - List of all games between `start_date` and `end_date`
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+this.http.get(this.url + "get_all_data_by_date_range.php", {
+        params:{startdate: startdate, enddate: enddate}}).map();
+```
+{% endtab %}
+{% endtabs %}
+
+## get\_all\_games
+
+Get all games.
 
 ```http
-{'Content-Type' : 'application/x-www-form-urlencoded'}
+GET /get_all_games/
+```
+
+{% tabs %}
+{% tab title="Response" %}
+* Success 
+  * 200 - List of all games
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+this.http.get(this.url + "get_all_games.php").map()
+```
+{% endtab %}
+{% endtabs %}
+
+## get\_all\_sports
+
+Get all sports.
+
+```http
+GET /get_all_sports/
+```
+
+{% tabs %}
+{% tab title="Response" %}
+* Success 
+  * 200 - List of all sports
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+this.http.get(this.url + "get_all_sports.php").map()
+```
+{% endtab %}
+{% endtabs %}
+
+## get\_games\_by\_league\_and\_date
+
+Get all games data between a date range and for a certain league.
+
+```http
+GET /get_games_by_league_and_date/:league/:start_date/:end_date
 ```
 
 {% tabs %}
 {% tab title="Parameters" %}
-* **`start_date`**: The start of the date range. Format is YYYY
+* **`league:`** `The sport league (event group).`
+* **`start_date`**: The start of the date range. Format is YYYY-MM-DDTHH:MM:SS.000Z.
+* **`end_date`**: The end of the date range. Format is YYYY-MM-DDTHH:MM:SS.
+{% endtab %}
+
+{% tab title="Response" %}
+* Success 
+  * 200 - List of all games between `start_date` and `end_date`
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+
 {% endtab %}
 {% endtabs %}
 
-get\_all\_games
+## get\_games\_by\_league
 
-get\_all\_sports
 
-get\_games\_by\_date
-
-get\_games\_by\_league\_and\_date
-
-get\_games\_by\_league
 
 get\_leagues\_by\_sport
 
