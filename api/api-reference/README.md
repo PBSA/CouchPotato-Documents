@@ -16,14 +16,12 @@ POST /add_game/:create_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `create_message`: Object of type [create](objects-1.md#create-message)
+* **`create_message`**: Object of type [create](objects-1.md#create-message)
 {% endtab %}
 
 {% tab title="Response" %}
 * Success 
-  * `status`: 200
-  * `title`: Game added
-  * `message`[: Add Game Success Response](objects-1.md#add-game-success-response)
+  * \`\`[Add Game Success Response](objects-1.md#add-game-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -47,55 +45,13 @@ postData.league = "EPL";
 postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
-postData.start_time = "2020-02-04T18:33:00.000Z"
+postData.start_time = "2020-02-04T18:33:00.000Z";
 this.http.post(url + "add_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}
 {% endtabs %}
 
-**Database Operations**
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Table</th>
-      <th style="text-align:left">Operation</th>
-      <th style="text-align:left">Response</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><em>events</em>
-      </td>
-      <td style="text-align:left">Add new event if this is the first game.</td>
-      <td style="text-align:left">
-        <p>200: Success</p>
-        <p>400<a href="error-codes.md#472-failed-to-add-new-event">[472]: Failed to add new event</a>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><em>games</em>
-      </td>
-      <td style="text-align:left">Add new game</td>
-      <td style="text-align:left">
-        <p>200: Success</p>
-        <p>400<a href="error-codes.md#474-failed-to-add-new-game">[474]: Failed to add new game</a>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><em>progress</em>
-      </td>
-      <td style="text-align:left">And new progress record. Set status to 0 (Not Started)</td>
-      <td style="text-align:left">
-        <p>200: Success</p>
-        <p>400<a href="error-codes.md#476-failed-to-update-game-progress">[476]: Failed to add  progress</a>
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>## start\_game
+## start\_game
 
 Starts an existing game and sends an in\_progress incident message to BOS.
 
@@ -111,14 +67,12 @@ POST /start_game/:in_progress_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `in_progress_message`: Object of type [in\_progress](objects-1.md#in-progress-message)
+* **`in_progress_message`**: Object of type [in\_progress](objects-1.md#in-progress-message)
 {% endtab %}
 
 {% tab title="Response" %}
 * Success 
-  * `status`: 200
-  * `title`: Game added
-  * `message`: [Start Game Success Response](objects-1.md#start-game-success-response)
+  *  [Start Game Success Response](objects-1.md#start-game-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -142,38 +96,15 @@ postData.league = "EPL";
 postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
-postData.start_time = "2020-02-04T18:33:00.000Z"
-postData.whistle_start_time = "2020-02-04T18:45:00.000Z"
+postData.start_time = "2020-02-04T18:33:00.000Z";
+postData.whistle_start_time = "2020-02-04T18:45:00.000Z";
+postData.match_id: 24;
 http.post(url + "start_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}
 {% endtabs %}
 
-**Database Operations**
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Table</th>
-      <th style="text-align:left">Operation</th>
-      <th style="text-align:left">Response</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><em>progress</em>
-      </td>
-      <td style="text-align:left">Add new progress record. Set status to 1 (In Progress)</td>
-      <td style="text-align:left">
-        <p>200: Success</p>
-        <p>400[<a href="error-codes.md#482-failed-to-update-game-progress">482] Failed to add progress record.</a>
-          <br
-          />
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>## add\_score
+## add\_score
 
 Add scores to a game.
 
@@ -189,14 +120,12 @@ POST /add_score/:result_message
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `result_message`: Object of type [result](objects-1.md#result)
+* **`result_message`**: Object of type [result](objects-1.md#result)
 {% endtab %}
 
 {% tab title="Response" %}
 * Success 
-  * `status`: 200
-  * `title`: Game added
-  * `message`: [Add Score Success Response](objects-1.md#add-score-success-response)
+  *  [Add Score Success Response](objects-1.md#add-score-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -223,42 +152,18 @@ postData.away = "Manchester United";
 postData.start_time = "2020-02-04T18:33:00.000Z";
 postData.home_score = 4;
 postData.away_score = 2;
+postData.match_id: 24;
 http.post(url + "add_score.php?" , postData, {headers}).map();
 ```
 {% endtab %}
 {% endtabs %}
 
-**Database Operations**
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Table</th>
-      <th style="text-align:left">Operation</th>
-      <th style="text-align:left">Response</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><em>games</em>
-      </td>
-      <td style="text-align:left">Adds the posted scores to the <code>home_score and away_score fields.</code>
-      </td>
-      <td style="text-align:left">
-        <p>200: Success</p>
-        <p>400<a href="error-codes.md#487-failed-to-add-scores">[487]: Failed to add score.</a>
-          <br
-          />
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>## finish\_game
+## finish\_game
 
 Finish a game
 
 ```http
-POST /add_score/:finish_game
+POST /finish_game/:finish_game_message
 ```
 
 **Header**
@@ -269,14 +174,12 @@ POST /add_score/:finish_game
 
 {% tabs %}
 {% tab title="Parameters" %}
-* `finish_game_message`: Object of type [finish](objects-1.md#finish)
+* **`finish_game_message`**: Object of type [finish](objects-1.md#finish)
 {% endtab %}
 
 {% tab title="Response" %}
 * Success 
-  * `status`: 200
-  * `title`: Game added
-  * `message`: [Add Score Success Response](objects-1.md#add-score-success-response)
+  *  [Finish game success response](objects-1.md#finish-game-success-response)
 * Failure
   * `status`: 400: Bad Request
   * `subcode`:  One of **`Error Objects`**
@@ -301,34 +204,184 @@ postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
 postData.start_time = "2020-02-04T18:33:00.000Z";
-postData.home_score = 4;
-postData.away_score = 2;
-http.post(url + "add_score.php?" , postData, {headers}).map();
+postData.whistle_end_time = "2020-02-04T20:33:00.000Z";
+postData.match_id: 24;
+http.post(url + "finish_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}
 {% endtabs %}
 
-**Database Operations**
+## cancel\_game
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Table</th>
-      <th style="text-align:left">Operation</th>
-      <th style="text-align:left">Response</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><em>progress</em>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">
-        <p>200: Success</p>
-        <p>400
-          <br />
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+Cancel a game
+
+```http
+POST /add_score/:cancel_game_message
+```
+
+**Header**
+
+```http
+{'Content-Type' : 'application/json'}
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+* **`cancel_game_message`**: Object of type [canceled](objects-1.md#canceled)
+{% endtab %}
+
+{% tab title="Response" %}
+* Success 
+  * [Cancel game success response](objects-1.md#cancel-game-success-response)
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  One of **`Error Objects`**
+  * `title`: One of ``**`Error Objects`**
+  * `message`: One of **`Error Objects`**
+
+**`Error Objects`**
+
+* [BOS Errors](error-codes.md#bos-errors)
+* [General Errors](error-codes.md#general-errors)
+* [Add Game Errors](error-codes.md#add-game-errors)
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+var http: HttpClient;
+var headers = new HttpHeaders({'Content-Type' : 'application/json'});
+var postData:any = {};
+postData.sport = "Soccer";
+postData.league = "EPL";
+postData.user = 1;
+postData.home = "Chelsea";
+postData.away = "Manchester United";
+postData.start_time = "2020-02-04T18:33:00.000Z";
+postData.match_id: 24;
+http.post(url + "cancel_game.php?" , postData, {headers}).map();
+```
+{% endtab %}
+{% endtabs %}
+
+## delete\_event
+
+Delete an event according to the league and date.
+
+```http
+DELETE /delete_event/:date/:league
+```
+
+**Header**
+
+```http
+{'Content-Type' : 'application/x-www-form-urlencoded'}
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+* **`date`**: The date of the event. Format is YYYY-MM-DD \(UTC\)
+* **`league`**: The name of the league
+{% endtab %}
+
+{% tab title="Response" %}
+* Success 
+  * 200
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+var http: HttpClient;
+var headers = new HttpHeaders({'Content-Type' : 'application/x-www-form-urlencoded'});
+var postData:any = {};
+postData.date = "2020-02-29";
+postData.league = "EPL";
+http.post(url + "delete_event.php?" , postData, {headers}).map();
+```
+{% endtab %}
+{% endtabs %}
+
+## delete\_game
+
+Delete an event according to the league and date.
+
+```http
+DELETE /delete_game/:game_id
+```
+
+**Header**
+
+```http
+{'Content-Type' : 'application/x-www-form-urlencoded'}
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+* **`game_id`**: The id of the game to be deleted.
+{% endtab %}
+
+{% tab title="Response" %}
+* Success 
+  * 200
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+var http: HttpClient;
+var headers = new HttpHeaders({'Content-Type' : 'application/x-www-form-urlencoded'});
+var postData:any = {};
+postData.game_id= 24;
+http.post(url + "delete_event.php?" , postData, {headers}).map();
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+get\_all\_data\_by\_date\_range
+
+get\_all\_games
+
+get\_all\_sports
+
+get\_games\_by\_date
+
+get\_games\_by\_league\_and\_date
+
+get\_games\_by\_league
+
+get\_leagues\_by\_sport
+
+get\_sports\_and\_leagues
+
+get\_teams\_by\_league
+
+get\_user
+
+get\_witnesses
+
+last\_event\_id\_by\_date\_and\_league
+
+last\_event\_id
+
+last\_game\_id\_by\_date\_and\_league
+
+last\_game\_id
+
+last\_game
+
+run\_replay
+
+
+
+
+
