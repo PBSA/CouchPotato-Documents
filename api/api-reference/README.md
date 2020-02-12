@@ -371,7 +371,8 @@ GET /get_all_data_by_date_range/:start_date/:end_date
 {% tab title="Example" %}
 ```typescript
 this.http.get(this.url + "get_all_data_by_date_range.php", {
-        params:{startdate: startdate, enddate: enddate}}).map();
+        params:{startdate: "2020-02-19T12:00:00.000Z", 
+                enddate: "2020-02-29T12:00:00.000Z"}}).map();
 ```
 {% endtab %}
 {% endtabs %}
@@ -454,7 +455,12 @@ GET /get_games_by_league_and_date/:league/:start_date/:end_date
 {% endtab %}
 
 {% tab title="Example" %}
-
+```typescript
+this.http.get(this.url + "get_all_data_by_date_range.php", {
+        params:{league: "NFL",
+                startdate: "2020-02-19T12:00:00.000Z", 
+                enddate: "2020-02-29T12:00:00.000Z"}}).map();
+```
 {% endtab %}
 {% endtabs %}
 
