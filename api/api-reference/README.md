@@ -554,7 +554,34 @@ this.http.get(this.url + "get_sports_and_leagues.php").map()
 
 ## get\_teams\_by\_league
 
+Get all teams from a league.
 
+```http
+GET /get_teams_by_league/:league
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+* **`league:`** The id of the league.
+{% endtab %}
+
+{% tab title="Response" %}
+* Success 
+  * 200 - List of all teams for the `league`
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+this.http.get(this.url + "get_teams_by_league.php", {
+        params:{league: 1}}).map();
+```
+{% endtab %}
+{% endtabs %}
 
 ## get\_witnesses
 
