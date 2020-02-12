@@ -431,7 +431,7 @@ this.http.get(this.url + "get_all_sports.php").map()
 
 ## get\_games\_by\_league\_and\_date
 
-Get all games data between a date range and for a certain league.
+Get all games data between a date range and for a league.
 
 ```http
 GET /get_games_by_league_and_date/:league/:start_date/:end_date
@@ -456,7 +456,7 @@ GET /get_games_by_league_and_date/:league/:start_date/:end_date
 
 {% tab title="Example" %}
 ```typescript
-this.http.get(this.url + "get_all_data_by_date_range.php", {
+this.http.get(this.url + "get_games_by_league_and_date.php", {
         params:{league: "NFL",
                 startdate: "2020-02-19T12:00:00.000Z", 
                 enddate: "2020-02-29T12:00:00.000Z"}}).map();
@@ -466,7 +466,7 @@ this.http.get(this.url + "get_all_data_by_date_range.php", {
 
 ## get\_games\_by\_league
 
-Get all games for a certain league.
+Get all games for a league.
 
 ```http
 GET /get_games_by_league/:league
@@ -474,7 +474,7 @@ GET /get_games_by_league/:league
 
 {% tabs %}
 {% tab title="Parameters" %}
-* **`league:`** `The sport league (event group).`
+* **`league:`** `The league (event group).`
 {% endtab %}
 
 {% tab title="Response" %}
@@ -489,33 +489,80 @@ GET /get_games_by_league/:league
 
 {% tab title="Example" %}
 ```typescript
-this.http.get(this.url + "get_all_data_by_date_range.php", {
+this.http.get(this.url + "get_games_by_league.php", {
         params:{league: "NFL" }}).map();
 ```
 {% endtab %}
 {% endtabs %}
 
-get\_leagues\_by\_sport
+## get\_leagues\_by\_sport
 
-get\_sports\_and\_leagues
+Get all leagues from a league.
 
-get\_teams\_by\_league
+```http
+GET /get_leagues_by_sport/:sport
+```
 
-get\_user
+{% tabs %}
+{% tab title="Parameters" %}
+* **`sport:`** The id of the sport.
+{% endtab %}
 
-get\_witnesses
+{% tab title="Response" %}
+* Success 
+  * 200 - List of all leagues for `sport`
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
 
-last\_event\_id\_by\_date\_and\_league
+{% tab title="Example" %}
+```typescript
+this.http.get(this.url + "get_leagues_by_sport.php", {
+        params:{sport: 0}}).map();
+```
+{% endtab %}
+{% endtabs %}
 
-last\_event\_id
+## get\_sports\_and\_leagues
 
-last\_game\_id\_by\_date\_and\_league
 
-last\_game\_id
 
-last\_game
+## get\_teams\_by\_league
 
-run\_replay
+
+
+## get\_user
+
+
+
+## get\_witnesses
+
+
+
+## last\_event\_id\_by\_date\_and\_league
+
+
+
+## last\_event\_id
+
+
+
+## last\_game\_id\_by\_date\_and\_league
+
+
+
+## last\_game\_id
+
+
+
+## last\_game
+
+
+
+## run\_replay
 
 
 
