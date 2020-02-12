@@ -583,13 +583,34 @@ this.http.get(this.url + "get_teams_by_league.php", {
 {% endtab %}
 {% endtabs %}
 
-## get\_witnesses
-
-
-
 ## last\_event\_id\_by\_date\_and\_league
 
+Get the event id of the last event on a date and for the league.
 
+```http
+GET /last_event_id_by_date_and_league/:date/:league
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+* **`date:`** Event date in the format YYYY-MM\_DD
+* **`league:`** The id of the league.
+{% endtab %}
+
+{% tab title="Response" %}
+* Success 
+  * 200 - List of all teams for the `league`
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+
+{% endtab %}
+{% endtabs %}
 
 ## last\_event\_id
 
