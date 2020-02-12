@@ -609,7 +609,7 @@ GET /last_event_id_by_date_and_league/:date/:league
 
 {% tab title="Example" %}
 ```typescript
-this.http.get(this.url + "last_event_id_by_date_and_league.php", {
+http.get(this.url + "last_event_id_by_date_and_league.php", {
         params:{
                 date: "2020-02-29",
                 league: 1}}).map();
@@ -645,7 +645,37 @@ http.get(this.url + "last_event_id.php").map()
 
 ## last\_game\_id\_by\_date\_and\_league
 
+Get the game id of the last game on a date and for the league.
 
+```http
+GET /last_game_id_by_date_and_league/:date/:league
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+* **`date:`** Game date in the format YYYY-MM\_DD
+* **`league:`** The name of the league.
+{% endtab %}
+
+{% tab title="Response" %}
+* Success 
+  * 200 - The last game id for `league` on `date`
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+get(this.url + "last_game_id_by_date_and_league.php", {
+        params:{
+                date: "2020-02-29",
+                league: 1}}).map();
+```
+{% endtab %}
+{% endtabs %}
 
 ## last\_game\_id
 
