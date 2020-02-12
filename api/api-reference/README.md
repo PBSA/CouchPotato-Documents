@@ -528,13 +528,31 @@ this.http.get(this.url + "get_leagues_by_sport.php", {
 
 ## get\_sports\_and\_leagues
 
+Get all sports and leagues
 
+```http
+GET /get_sports_and_leagues/
+```
+
+{% tabs %}
+{% tab title="Response" %}
+* Success 
+  * 200 - List of all sports
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+this.http.get(this.url + "get_sports_and_leagues.php").map()
+```
+{% endtab %}
+{% endtabs %}
 
 ## get\_teams\_by\_league
-
-
-
-## get\_user
 
 
 
