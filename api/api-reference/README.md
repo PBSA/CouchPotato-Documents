@@ -347,7 +347,25 @@ http.post(url + "delete_event.php?" , postData, {headers}).map();
 
 
 
-get\_all\_data\_by\_date\_range
+## get\_all\_data\_by\_date\_range
+
+Get all games data between a date range.
+
+```http
+GET /get_all_data_by_date_range/:start_date/:end_date
+```
+
+**Header**
+
+```http
+{'Content-Type' : 'application/x-www-form-urlencoded'}
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+* **`start_date`**: The start of the date range. Format is YYYY
+{% endtab %}
+{% endtabs %}
 
 get\_all\_games
 
