@@ -110,17 +110,55 @@
 | :--- | :--- | :--- |
 | 476 | Failed to update game progress | None |
 
+
+
+### **477 - Failed to add new game progress**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 477 | Failed to add new game progress | None |
+
 ## **Start Game Errors**
 
 ### **480 - Start game parameter error\(s\)**
 
+\*\*\*\*
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 476 |  Missing parameters \[list of parameters\] | Parameters are: sport, league, home, away, start\_time, whistle\_start\_time, ****match\_id |
+
 ### **481 - Whistle start time is before start time**
+
+\*\*\*\*
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 476 | Failed to update game progress | None |
 
 ### **482 - Failed to add whistle start time**
 
+\*\*\*\*
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 476 | Failed to update game progress | None |
+
 ### **483 - Failed to update game progress**
 
+\*\*\*\*
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 476 | Failed to update game progress | None |
+
 ### **484 - Game must not have already started**
+
+\*\*\*\*
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 476 | Failed to update game progress | None |
 
 ## **Add Scores Errors**
 
