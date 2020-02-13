@@ -8,7 +8,7 @@
 
 ### **450 - Not normalized incident**
 
-**Incident message contained either an invalid sport of league \(event group\).**
+**Incident message contained either an invalid sport or league \(event group\).**
 
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
@@ -178,11 +178,31 @@
 
 ### **490 - Finish parameter error\(s\)**
 
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 4**90** | Missing parameters \[list of parameters\] | Parameters are: sport, league, home, away, start\_time, whistle\_end\_time, match\_id |
+
 ### **491 - Whistle end time is before whistle start time**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 491 | Whistle end time \[whistle\_end\_time\] is before the whistle start time \[whistle\_start\_time\] | The whistle end time must be equal to or after the whistle start time. |
 
 ### **492 - Failed to add whistle end time**
 
+\*\*\*\*
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 492 | Game must not have already started | None |
+
 ### **493 - Failed to update game progress**
+
+\*\*\*\*
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 493 | Game must not have already started | None |
 
 ## **Cancel Game Errors**
 
