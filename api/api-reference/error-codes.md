@@ -190,23 +190,29 @@
 
 ### **492 - Failed to add whistle end time**
 
-\*\*\*\*
-
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 492 | Game must not have already started | None |
+| 492 | Failed to add whistle end time | None |
 
 ### **493 - Failed to update game progress**
 
-\*\*\*\*
-
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 493 | Game must not have already started | None |
+| 493 | Failed to update game progress | None |
 
 ## **Cancel Game Errors**
 
 ### **495 - Canceled parameter error\(s\)**
 
-### **496 - Failed to update game progress** 
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 49**5** | Missing parameters \[list of parameters\] | Parameters are: sport, league, home, away, start\_time, whistle\_end\_time, match\_id |
+
+### **496 - Failed to update game progress**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 496 | Failed to update game progress | None |
+
+###  
 
