@@ -731,6 +731,27 @@ get(this.url + "last_game").map();
 
 ## run\_replay
 
+Run a data replay for the selected sport and league\(s\)
+
+```http
+GET /last_game_id_by_date_and_league/:date/:league
+```
+
+{% tabs %}
+{% tab title="Parameters" %}
+* **`date:`** Game date in the format YYYY-MM\_DD
+* **`league:`** The name of the league.
+{% endtab %}
+
+{% tab title="Response" %}
+
+{% endtab %}
+
+{% tab title="Example" %}
+
+{% endtab %}
+{% endtabs %}
+
 
 
 
