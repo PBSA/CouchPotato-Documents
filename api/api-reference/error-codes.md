@@ -110,63 +110,69 @@
 | :--- | :--- | :--- |
 | 476 | Failed to update game progress | None |
 
-
-
 ### **477 - Failed to add new game progress**
 
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
 | 477 | Failed to add new game progress | None |
 
+### **478 - Game already exists**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 478 | Game already exists | A game can't be created more than once |
+
 ## **Start Game Errors**
 
 ### **480 - Start game parameter error\(s\)**
 
-\*\*\*\*
-
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 476 |  Missing parameters \[list of parameters\] | Parameters are: sport, league, home, away, start\_time, whistle\_start\_time, ****match\_id |
+| 480 |  Missing parameters \[list of parameters\] | Parameters are: sport, league, home, away, start\_time, whistle\_start\_time, ****match\_id |
 
 ### **481 - Whistle start time is before start time**
 
-\*\*\*\*
-
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 476 | Failed to update game progress | None |
+| 481 | Whistle start time \[whistle\_start\_time\] is before the start time \[start\_time\] | The whistle start time must be equal to or after the start time. |
 
 ### **482 - Failed to add whistle start time**
 
-\*\*\*\*
-
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 476 | Failed to update game progress | None |
+| 482 | Failed to add whistle start time | None |
 
 ### **483 - Failed to update game progress**
 
-\*\*\*\*
-
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 476 | Failed to update game progress | None |
+| 483 | Failed to update game progress | None |
 
 ### **484 - Game must not have already started**
 
-\*\*\*\*
-
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 476 | Failed to update game progress | None |
+| 484 | Game must not have already started | None |
 
 ## **Add Scores Errors**
 
 ### **485 - Add score parameter error\(s\)**
 
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 48**5** | Missing parameters \[list of parameters\] | Parameters are: sport, league, home, away, start\_time, home\_score, away\_score, match\_id |
+
 ### **486 - Game must be in progress**
 
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 486 | Game must not have already started | None |
+
 ### **487 - Failed to add scores**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 487 | Game must not have already started | None |
 
 ## **Finish Game Errors**
 
