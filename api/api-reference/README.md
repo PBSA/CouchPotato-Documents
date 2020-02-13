@@ -679,11 +679,55 @@ get(this.url + "last_game_id_by_date_and_league.php", {
 
 ## last\_game\_id
 
+Get the game id of the last game for all sports.
 
+```http
+GET /last_game_id
+```
+
+{% tabs %}
+{% tab title="Response" %}
+* Success 
+  * 200 - The last game id for all sports.
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+get(this.url + "last_game_id.php").map();
+```
+{% endtab %}
+{% endtabs %}
 
 ## last\_game
 
+Get the game details of all games sorted descending so the most recent \(last\) game is the first record
 
+```http
+GET /last_game
+```
+
+{% tabs %}
+{% tab title="Response" %}
+* Success 
+  * 200 - All game records sorted descending.
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
+{% endtab %}
+
+{% tab title="Example" %}
+```typescript
+get(this.url + "last_game").map();
+```
+{% endtab %}
+{% endtabs %}
 
 ## run\_replay
 
