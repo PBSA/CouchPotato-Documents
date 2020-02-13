@@ -8,6 +8,12 @@ Adds a new game and sends a create incident message to BOS.
 POST /add_game/:create_message
 ```
 
+**Header**
+
+```http
+{'Content-Type' : 'application/json'}
+```
+
 {% tabs %}
 {% tab title="Parameters" %}
 * **`create_message`**: Object of type [create](objects-1.md#create-message)
@@ -40,7 +46,7 @@ postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
 postData.start_time = "2020-02-04T18:33:00.000Z";
-http.post(url + "add_game.php?" , postData, {headers}).map();
+this.http.post(url + "add_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}
 {% endtabs %}
@@ -51,6 +57,12 @@ Starts an existing game and sends an in\_progress incident message to BOS.
 
 ```http
 POST /start_game/:in_progress_message
+```
+
+**Header**
+
+```http
+{'Content-Type' : 'application/json'}
 ```
 
 {% tabs %}
@@ -98,6 +110,12 @@ Add scores to a game.
 
 ```http
 POST /add_score/:result_message
+```
+
+**Header**
+
+```http
+{'Content-Type' : 'application/json'}
 ```
 
 {% tabs %}
@@ -148,6 +166,12 @@ Finish a game
 POST /finish_game/:finish_game_message
 ```
 
+**Header**
+
+```http
+{'Content-Type' : 'application/json'}
+```
+
 {% tabs %}
 {% tab title="Parameters" %}
 * **`finish_game_message`**: Object of type [finish](objects-1.md#finish)
@@ -193,6 +217,12 @@ Cancel a game
 
 ```http
 POST /add_score/:cancel_game_message
+```
+
+**Header**
+
+```http
+{'Content-Type' : 'application/json'}
 ```
 
 {% tabs %}
@@ -241,6 +271,12 @@ Delete an event according to the league and date.
 DELETE /delete_event/:date/:league
 ```
 
+**Header**
+
+```http
+{'Content-Type' : 'application/x-www-form-urlencoded'}
+```
+
 {% tabs %}
 {% tab title="Parameters" %}
 * **`date`**: The date of the event. Format is YYYY-MM-DD \(UTC\)
@@ -262,7 +298,7 @@ DELETE /delete_event/:date/:league
 var http: HttpClient;
 var headers = new HttpHeaders({'Content-Type' : 'application/x-www-form-urlencoded'});
 let httpParams = new HttpParams().set('date', '2020-02-29', 'league', 'EPL');
-return http.delete(url + "delete_event.php", { 
+return this.http.delete(this.url + "delete_event.php", { 
         params: httpParams, headers: headers});
 ```
 {% endtab %}
@@ -274,6 +310,12 @@ Delete an event according to the league and date.
 
 ```http
 DELETE /delete_game/:game_id
+```
+
+**Header**
+
+```http
+{'Content-Type' : 'application/x-www-form-urlencoded'}
 ```
 
 {% tabs %}
@@ -328,7 +370,7 @@ GET /get_all_data_by_date_range/:start_date/:end_date
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "get_all_data_by_date_range.php", {
+this.http.get(this.url + "get_all_data_by_date_range.php", {
         params:{startdate: "2020-02-19T12:00:00.000Z", 
                 enddate: "2020-02-29T12:00:00.000Z"}}).map();
 ```
@@ -356,7 +398,7 @@ GET /get_all_games/
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "get_all_games.php").map()
+this.http.get(this.url + "get_all_games.php").map()
 ```
 {% endtab %}
 {% endtabs %}
@@ -382,7 +424,7 @@ GET /get_all_sports/
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "get_all_sports.php").map()
+this.http.get(this.url + "get_all_sports.php").map()
 ```
 {% endtab %}
 {% endtabs %}
@@ -414,7 +456,7 @@ GET /get_games_by_league_and_date/:league/:start_date/:end_date
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "get_games_by_league_and_date.php", {
+this.http.get(this.url + "get_games_by_league_and_date.php", {
         params:{league: "NFL",
                 startdate: "2020-02-19T12:00:00.000Z", 
                 enddate: "2020-02-29T12:00:00.000Z"}}).map();
@@ -447,7 +489,7 @@ GET /get_games_by_league/:league
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "get_games_by_league.php", {
+this.http.get(this.url + "get_games_by_league.php", {
         params:{league: "NFL" }}).map();
 ```
 {% endtab %}
@@ -478,7 +520,7 @@ GET /get_leagues_by_sport/:sport
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "get_leagues_by_sport.php", {
+this.http.get(this.url + "get_leagues_by_sport.php", {
         params:{sport: 0}}).map();
 ```
 {% endtab %}
@@ -505,7 +547,7 @@ GET /get_sports_and_leagues/
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "get_sports_and_leagues.php").map()
+this.http.get(this.url + "get_sports_and_leagues.php").map()
 ```
 {% endtab %}
 {% endtabs %}
@@ -535,7 +577,7 @@ GET /get_teams_by_league/:league
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "get_teams_by_league.php", {
+this.http.get(this.url + "get_teams_by_league.php", {
         params:{league: 1}}).map();
 ```
 {% endtab %}
@@ -567,7 +609,7 @@ GET /last_event_id_by_date_and_league/:date/:league
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "last_event_id_by_date_and_league.php", {
+http.get(this.url + "last_event_id_by_date_and_league.php", {
         params:{
                 date: "2020-02-29",
                 league: 1}}).map();
@@ -596,7 +638,7 @@ GET /last_event_id/
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "last_event_id.php").map()
+http.get(this.url + "last_event_id.php").map()
 ```
 {% endtab %}
 {% endtabs %}
@@ -627,7 +669,7 @@ GET /last_game_id_by_date_and_league/:date/:league
 
 {% tab title="Example" %}
 ```typescript
-http.get(url + "last_game_id_by_date_and_league.php", {
+get(this.url + "last_game_id_by_date_and_league.php", {
         params:{
                 date: "2020-02-29",
                 league: 1}}).map();
@@ -637,94 +679,15 @@ http.get(url + "last_game_id_by_date_and_league.php", {
 
 ## last\_game\_id
 
-Get the game id of the last game for all sports.
 
-```http
-GET /last_game_id
-```
-
-{% tabs %}
-{% tab title="Response" %}
-* Success 
-  * 200 - The last game id for all sports.
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
-{% endtab %}
-
-{% tab title="Example" %}
-```typescript
-http.get(url + "last_game_id.php").map();
-```
-{% endtab %}
-{% endtabs %}
 
 ## last\_game
 
-Get the game details of all games sorted descending so the most recent \(last\) game is the first record
 
-```http
-GET /last_game
-```
-
-{% tabs %}
-{% tab title="Response" %}
-* Success 
-  * 200 - All game records sorted descending.
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
-{% endtab %}
-
-{% tab title="Example" %}
-```typescript
-http.get(url + "last_game").map();
-```
-{% endtab %}
-{% endtabs %}
 
 ## run\_replay
 
-Run a data replay for the selected sport and league\(s\)
 
-```http
-GET /run_replay/:sport/:leagues/:start/:end
-```
 
-{% tabs %}
-{% tab title="Parameters" %}
-* **`sport:`** The name of the sport
-* **`leagues:`** The name of the leagues. Pipe separated list, e.g "EPL\|La Liga\|Serie A
-* **`start`**: Start date in the format YYYY-MM\_DD
-* **`end`**: End date in the format YYYY-MM\_DD
-{% endtab %}
 
-{% tab title="Response" %}
-* Success 
-  * [Replay Response Object](objects-1.md#replay-response-object)
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
-{% endtab %}
-
-{% tab title="Example" %}
-```typescript
-http.get(url + "run_replay.php", {params:{
-                sport: "Soccer", 
-                leagues: "EPL | La Liga", 
-                start: "2020-02-01", 
-                end: "2020-01-08"}}).map();
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="warning" %}
-**Note**: Replays can only be run for one sport at a time.
-{% endhint %}
 
