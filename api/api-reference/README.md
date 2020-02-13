@@ -734,25 +734,39 @@ get(this.url + "last_game").map();
 Run a data replay for the selected sport and league\(s\)
 
 ```http
-GET /last_game_id_by_date_and_league/:date/:league
+GET /run_replay/:sport/:leagues/:start/:end
 ```
 
 {% tabs %}
 {% tab title="Parameters" %}
-* **`date:`** Game date in the format YYYY-MM\_DD
-* **`league:`** The name of the league.
+* **`sport:`** The name of the sport
+* **`leagues:`** The name of the leagues. Pipe separated list, e.g "EPL\|La Liga\|Serie A
+* **`start`**: Start date in the format YYYY-MM\_DD
+* **`end`**: End date in the format YYYY-MM\_DD
 {% endtab %}
 
 {% tab title="Response" %}
-
+* Success 
+  * [Replay Response Object](objects-1.md#replay-response-object)
+* Failure
+  * `status`: 400: Bad Request
+  * `subcode`:  
+  * `title`: 
+  * `message`: 
 {% endtab %}
 
 {% tab title="Example" %}
-
+```typescript
+http.get(this.url + "run_replay.php", {params:{
+                sport: "Soccer", 
+                leagues: "EPL | La Liga", 
+                start: "2020-02-01", 
+                end: "2020-01-08"}}).map();
+```
 {% endtab %}
 {% endtabs %}
 
-
-
-
+{% hint style="warning" %}
+**Note**: Replays can only be run for one sport at a time.
+{% endhint %}
 
