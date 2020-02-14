@@ -200,6 +200,12 @@
 | :--- | :--- | :--- |
 | 493 | Failed to update game progress | None |
 
+### **494 - Game must have a score**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 494 | Failed to update game progress | A game can't be finished until the scores are added |
+
 ## **Cancel Game Errors**
 
 ### **495 - Canceled parameter error\(s\)**
@@ -212,7 +218,11 @@
 
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 496 | Failed to update game progress | None |
+| 496 | Failed to update game progress | None  |
 
-###  
+### **497 - Game can't be canceled**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 496 | Game can't be canceled | A game can only be canceled if it hasn't started, or if it's still in progress |
 
