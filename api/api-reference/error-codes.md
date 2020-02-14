@@ -36,7 +36,7 @@
 
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 435 | Failed to get all games in league \[league\] for the date range \[start\] to \[end\] | Invalid date range or parameters are missing |
+| 435 | Failed to get all games in league \[league\] between \[start\] to \[end\] | Invalid date range or parameters are missing |
 
 ### 436 - Failed to get all games by league
 
@@ -44,11 +44,59 @@
 | :--- | :--- | :--- |
 | 436 | Failed to get all games in league \[league\] | None |
 
-### 437 - Failed to get all games by league
+### 437 - Failed to get all leagues by sport
 
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 437 | Failed to get all games in league \[league\] | None |
+| 437 | Failed to get all leagues for sport \[sport \] | None |
+
+### 438 - Failed to get all sports and leagues
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 438 | Failed to get all sports and leagues | None |
+
+### 439 - Failed to get teams for league
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 439 | Failed to get all teams for league \[ league\] | None |
+
+### 440 - Failed to get last event id by date and league
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 440 | Failed to get the last event id for league \[league\] on \[date\] |  |
+
+### 441 - Failed to get last event id
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 441 | Failed to get the last event id  |  |
+
+### 442 - Failed to get last game id by date and league 
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 442 | Failed to get the last game id for league \[league\] on \[date\] |  |
+
+### 443 - Failed to get last game id
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 443 | Failed to get the last game id for all sports |  |
+
+### 444 - Failed to get last game
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 444 | Failed to get the last game for all sports |  |
+
+### 445 - Failed to run replay
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 445 | Failed to run replay for \[sport\] | Object of type [BOS Schema](../bos-schema.md) |
 
 ## **BOS Errors**
 

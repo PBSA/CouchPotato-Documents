@@ -472,13 +472,10 @@ GET /get_sports_and_leagues/
 
 {% tabs %}
 {% tab title="Response" %}
-* Success 
-  * 200 - List of all sports
+* Success - 200
+  * List of all sports
 * Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+  * [Error 438](error-codes.md#438-failed-to-get-all-leagues-by-sport)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -502,13 +499,10 @@ GET /get_teams_by_league/:league
 {% endtab %}
 
 {% tab title="Response" %}
-* Success 
-  * 200 - List of all teams for the `league`
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Success - 200
+  * List of all teams for the `league`
+* Failure - 400
+  * [Error 439](error-codes.md#439-failed-to-get-last-event-id-by-date-range-and-league)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -534,13 +528,10 @@ GET /last_event_id_by_date_and_league/:date/:league
 {% endtab %}
 
 {% tab title="Response" %}
-* Success 
-  * 200 - The last event id for `league` on `date`
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Success - 200
+  * The last event id for `league` on `date`
+* Failure - 400
+  * [Error 440](error-codes.md#440-failed-to-get-teams-for-league)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -563,13 +554,10 @@ GET /last_event_id/
 
 {% tabs %}
 {% tab title="Parameters" %}
-* Success 
-  * 200 - The last `event_id` for all leagues
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Success - 200
+  * The last `event_id` for all leagues
+* Failure - 400
+  * [Error 441](error-codes.md#441-failed-to-get-last-event-id)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -594,13 +582,10 @@ GET /last_game_id_by_date_and_league/:date/:league
 {% endtab %}
 
 {% tab title="Response" %}
-* Success 
-  * 200 - The last game id for `league` on `date`
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Success - 200
+  * The last game id for `league` on `date`
+* Failure - 400
+  * [Error 442](error-codes.md#442-failed-to-get-last-event-id)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -623,13 +608,10 @@ GET /last_game_id
 
 {% tabs %}
 {% tab title="Response" %}
-* Success 
-  * 200 - The last game id for all sports.
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Success - 200
+  * The last game id for all sports.
+* Failure - 400
+  * [Error 443](error-codes.md#443-failed-to-get-last-game-id)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -649,13 +631,10 @@ GET /last_game
 
 {% tabs %}
 {% tab title="Response" %}
-* Success 
-  * 200 - All game records sorted descending.
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Success - 200
+  * All game records sorted descending.
+* Failure - 400
+  * [Error 444](error-codes.md#444-failed-to)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -682,13 +661,10 @@ GET /run_replay/:sport/:leagues/:start/:end
 {% endtab %}
 
 {% tab title="Response" %}
-* Success 
+* Success - 200
   * [Replay Response Object](objects-1.md#replay-response-object)
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Failure - 400
+  * [Error 445](error-codes.md#444-failed-to-run-replay)
 {% endtab %}
 
 {% tab title="Example" %}
