@@ -313,9 +313,9 @@ GET /get_all_data_by_date_range/:start_date/:end_date
 {% endtab %}
 
 {% tab title="Response" %}
-* Success 
-  * 200 - List of all games between `start_date` and `end_date`
-* Failure
+* Success - 200
+  * List of all games between `start_date` and `end_date`
+* Failure - 400
   * \`\`[Error 432](error-codes.md#432-failed-to-get-all-data-by-date-range)
 {% endtab %}
 
@@ -361,13 +361,10 @@ GET /get_all_sports/
 
 {% tabs %}
 {% tab title="Response" %}
-* Success 
-  * 200 - List of all sports
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Success - 200 
+  * List of all sports
+* Failure - 400
+  * [Error 434](error-codes.md#434-failed-to-get-all-sports)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -388,18 +385,15 @@ GET /get_games_by_league_and_date/:league/:start_date/:end_date
 {% tabs %}
 {% tab title="Parameters" %}
 * **`league:`** `The sport league (event group).`
-* **`start_date`**: The start of the date range. Format is YYYY-MM-DDTHH:MM:SS.000Z.
-* **`end_date`**: The end of the date range. Format is YYYY-MM-DDTHH:MM:SS.
+* **`start`**: The start of the date range. Format is YYYY-MM-DDTHH:MM:SS.000Z.
+* **`end`**: The end of the date range. Format is YYYY-MM-DDTHH:MM:SS.
 {% endtab %}
 
 {% tab title="Response" %}
-* Success 
-  * 200 - List of all games between `start_date` and `end_date`
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Success - 200
+  * List of all games for `league` between `start` and `end`
+* Failure - 400
+  * [Error 435](error-codes.md#435-failed-to-get-all-games-by-league-and-date-range)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -426,13 +420,10 @@ GET /get_games_by_league/:league
 {% endtab %}
 
 {% tab title="Response" %}
-* Success 
-  * 200 - List of all games for `league`
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Success - 200
+  * List of all games for `league`
+* Failure - 400
+  * [Error 436](error-codes.md#436-failed-to-get-all-games-by-league)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -457,13 +448,10 @@ GET /get_leagues_by_sport/:sport
 {% endtab %}
 
 {% tab title="Response" %}
-* Success 
-  * 200 - List of all leagues for `sport`
-* Failure
-  * `status`: 400: Bad Request
-  * `subcode`:  
-  * `title`: 
-  * `message`: 
+* Success - 200
+  * List of all leagues for `sport`
+* Failure - 400
+  * [Error 437](error-codes.md#437-failed-to-get-all-games-by-league)
 {% endtab %}
 
 {% tab title="Example" %}
