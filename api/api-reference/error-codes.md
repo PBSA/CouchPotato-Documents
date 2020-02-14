@@ -2,7 +2,29 @@
 
 ## **General Errors**
 
-### **430 -** 
+### **430  - Failed to Delete League**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 430 | Failed to delete event league \[league\] | League might not exist or parameters are missing. |
+
+### **431  - Failed to Delete Game**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 431 | Failed to delete game \[game\] | Game might not exist or parameters are missing. |
+
+### 432 - Failed to get all games by Date Range
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 432 | Failed to get all games in the date range \[startdate\] to \[enddate\] | Invalid date range or parameters are missing |
+
+### 433 - Failed to get all games
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 433 | Failed to get all games | None |
 
 ## **BOS Errors**
 
