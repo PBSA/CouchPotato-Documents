@@ -338,9 +338,9 @@ GET /get_all_games/
 
 {% tabs %}
 {% tab title="Response" %}
-* Success 
-  * 200 - List of all games
-* Failure
+* Success - 200
+  * List of all games
+* Failure - 400
   * [Error 433](error-codes.md#433-failed-to-get-all-games)
 {% endtab %}
 
@@ -662,7 +662,8 @@ GET /run_replay/:sport/:leagues/:start/:end
 
 {% tab title="Response" %}
 * Success - 200
-  * [Replay Response Object](objects-1.md#replay-response-object)
+  * `title`: Replay completed
+  * `message`: \[sport\]: { \[league\]: total, \[league\]: total, ... }
 * Failure - 400
   * [Error 445](error-codes.md#444-failed-to-run-replay)
 {% endtab %}

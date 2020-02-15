@@ -96,7 +96,7 @@
 
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
-| 445 | Failed to run replay for \[sport\] | Object of type [BOS Schema](../bos-schema.md) |
+| 445 | Failed to run replay for \[sport\] | Replay failed to send to one or more endpoints |
 
 ## **BOS Errors**
 
