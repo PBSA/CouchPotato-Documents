@@ -10,7 +10,6 @@
 
 ## Database
 
-* [Installation](database/installation.md)
 * [Schema](database/schema.md)
 * [Objects](database/objects/README.md)
   * [Tables](database/objects/tables.md)
