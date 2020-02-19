@@ -65,12 +65,31 @@ CREATE TABLE `errorlog` (
 | Index | Type | Columns | Order |
 | :--- | :--- | :--- | :--- |
 | PRIMARY | PRIMARY | id | ASC |
+| fk\_user\_idx | INDEX | user | ASC |
+| fk\_league\_idx | INDEX | league | ASC |
 
 #### Foreign Keys
 
-None.
+| Foreign Key | Referenced Table | Column | Referenced Column |
+| :--- | :--- | :--- | :--- |
+| fk\_user | 'couch\_potato'.'users' | user | id |
+| fk\_leagues | 'couch\_potato'.'leagues' | league | name |
 
-## 
+#### Script
+
+```sql
+CREATE TABLE `events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user` int(11) NOT NULL,
+  `league` varchar(45) NOT NULL,
+  `date` date NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_league_idx` (`league`),
+  KEY `fk_user_idx` (`user`),
+  CONSTRAINT `fk_leagues` FOREIGN KEY (`league`) REFERENCES `leagues` (`name`),
+  CONSTRAINT `fk_user` FOREIGN KEY (`user`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+```
 
 
 
