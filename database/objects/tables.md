@@ -56,11 +56,9 @@ CREATE TABLE `errorlog` (
 | Column | Datatype | PK | NN | AI | Default |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | INT\(11\) | ✅ | ✅ | ✅ |   |
-| timestamp | DATETIME |  ❌  | ✅ | ❌  | CURRENT\_TIMESTAMP |
-| status | VARCHAR\(4\) |  ❌  | ✅ | ❌  |   |
-| subcode | VARCHAR\(4\) | ❌   | ✅ | ❌  |   |
-| title | VARCHAR\(255\) |  ❌  | ✅ | ❌  |   |
-| message | VARCHAR\(1000\) |  ❌  |  ❌  | ❌  |   |
+| user | INT\(11\) |  ❌  | ✅ | ❌  |   |
+| league | VARCHAR\(45\) |  ❌  | ✅ | ❌  |   |
+| date | DATE | ❌   | ✅ | ❌  |   |
 
 #### Indexes
 
