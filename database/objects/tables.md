@@ -27,9 +27,13 @@ description: 'The following is a list of the tables in the Couch Potato database
 
 ### Indexes
 
-
+| Index | Type | Columns | Order |
+| :--- | :--- | :--- | :--- |
+| PRIMARY | PRIMARY | id | ASC |
 
 ### Foreign Keys
+
+None.
 
 ## events
 
