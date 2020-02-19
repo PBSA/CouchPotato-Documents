@@ -1,6 +1,6 @@
 # Couch Potato
 
-{% page-ref page="couch-potato/about.md" %}
+{% page-ref page="about.md" %}
 
 {% page-ref page="couch-potato/installation.md" %}
 

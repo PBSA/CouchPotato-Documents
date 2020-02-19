@@ -1,10 +1,15 @@
 # Table of contents
 
 * [Couch Potato](README.md)
+* [About](about.md)
+
+## Technical
+
+* [Functional Requirements](technical/functional-requirements.md)
+* [Bookie Oracle System \(BOS\)](technical/bookie-oracle-system-bos.md)
 
 ## Getting Started <a id="couch-potato"></a>
 
-* [About](couch-potato/about.md)
 * [Installation](couch-potato/installation.md)
 * [How to Guide](couch-potato/how-to-guide.md)
 
