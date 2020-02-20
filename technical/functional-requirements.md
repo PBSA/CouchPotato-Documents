@@ -26,7 +26,19 @@ Couch Potato aims to improve the data feed and data proxy challenges facing Book
 * Becoming a 'pay-per-input' service for the users of Couch Potato that are entering the data. Couch Potato will track every input such that a suitable payment model can be created for reimbursing the users.
 * Keeping the data feed providers accountable. If any instance of Couch Potato, operating as a mainnet data proxy, consistently delivers bad data or is unreliable, then that data proxy won't qualify for payment, and ultimately will be removed by witness consensus.
 
-## High Level Flow Diagram
+## High Level Flow Diagrams
+
+### Login and Navigation
+
+![](../.gitbook/assets/blank-diagram-5.png)
+
+### Game Selector
+
+
+
+
+
+### Data Replay
 
 
 
