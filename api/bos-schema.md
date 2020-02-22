@@ -132,8 +132,6 @@ These objects are used for the five BOS incident messages. The objects are creat
 {% endtab %}
 {% endtabs %}
 
-
-
 ## result
 
 {% tabs %}
