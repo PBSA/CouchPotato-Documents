@@ -30,7 +30,7 @@ Couch Potato aims to improve the data feed and data proxy challenges facing Book
 
 ### Login and Navigation
 
-![](../.gitbook/assets/blank-diagram-5.png)
+![](../.gitbook/assets/cp-dashboard.png)
 
 ### Game Selector
 
@@ -38,9 +38,7 @@ Couch Potato aims to improve the data feed and data proxy challenges facing Book
 
 ### Data Replay
 
-
-
-
+![](../.gitbook/assets/cp-replay.png)
 
 ## Requirements
 
