@@ -34,9 +34,7 @@ Couch Potato aims to improve the data feed and data proxy challenges facing Book
 
 ### Game Selector
 
-
-
-
+![](../.gitbook/assets/cp-selector.png)
 
 ### Data Replay
 
