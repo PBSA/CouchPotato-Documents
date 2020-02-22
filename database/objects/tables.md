@@ -193,6 +193,7 @@ CREATE TABLE `httplog` (
 | uniquename | VARCHAR\(255\) |  ❌  | ✅ | ❌  |   |
 | call | VARCHAR\(20\) | ❌   | ✅ | ❌  |   |
 | message | JSON | ❌   | ✅ | ❌   |   |
+| url | VARCHAR\(255\) | ❌ | ✅ | ❌ |   |
 
 #### Indexes
 
