@@ -98,6 +98,12 @@
 | :--- | :--- | :--- |
 | 445 | Failed to run replay for \[sport\] | Replay failed to send to one or more endpoints |
 
+### 446 - Failed to get league detals
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 446 | Failed to get league details \[leaguename\] |  |
+
 ## **BOS Errors**
 
 ### **450 - Not normalized incident**
