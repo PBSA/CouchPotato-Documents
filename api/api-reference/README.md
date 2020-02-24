@@ -513,8 +513,6 @@ http.get(url + "get_teams_by_league.php", {
 {% endtab %}
 {% endtabs %}
 
-
-
 ## get\_league\_data\_by\_name
 
 Get all league information from its name.
@@ -532,11 +530,11 @@ GET /get_league_data_by_name/:leaguename
 * Success - 200
   * All fields for the selected league
 * Failure - 400
-  * [Error 439](error-codes.md#439-failed-to-get-last-event-id-by-date-range-and-league)
-
-ast\_event\_id\_by\_date\_and\_league
+  * [Error 446](error-codes.md#446-failed-to-get-league-detals)
 {% endtab %}
 {% endtabs %}
+
+## last\_event\_id\_by\_date\_and\_league
 
 Get the event id of the last event on a date and for the league.
 
