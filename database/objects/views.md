@@ -17,6 +17,7 @@
 | games.id | gameid |
 | leagues.sport | sportid |
 | leagues.id | leagueid |
+| leagues.icon | leagueicon |
 | sports.name | sportname |
 | sports.icon | icon |
 | sports.duration | duration |
@@ -44,6 +45,7 @@ VIEW `vwgameevents` AS
         `y`.`id` AS `gameid`,
         `z`.`sport` AS `sportid`,
         `z`.`id` AS `leagueid`,
+        `z`.`icon` AS `leagueicon`,
         `a`.`name` AS `sportname`,
         `a`.`icon` AS `icon`,
         `a`.`duration` AS `duration`,
