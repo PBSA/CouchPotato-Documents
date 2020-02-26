@@ -24,6 +24,7 @@ description: 'The following is a list of the tables in the Couch Potato database
 | subcode | VARCHAR\(4\) | ❌   | ✅ | ❌  |   |
 | title | VARCHAR\(255\) |  ❌  | ✅ | ❌  |   |
 | message | VARCHAR\(1000\) |  ❌  |  ❌  | ❌  |  NULL |
+| url | VARCHAR\(255\) |  ❌ | ✅ |  ❌ |  |
 
 #### Indexes
 
