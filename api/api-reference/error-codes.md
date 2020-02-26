@@ -98,11 +98,19 @@
 | :--- | :--- | :--- |
 | 445 | Failed to run replay for \[sport\] | Replay failed to send to one or more endpoints |
 
-### 446 - Failed to get league detals
+### 446 - Failed to get league details
 
 | **Sub Code** | Title | Message |
 | :--- | :--- | :--- |
 | 446 | Failed to get league details for \[leaguename\] |  |
+
+### 447 - Failed to change password
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 447 | Failed to change password for \[username\] |  |
+
+\*\*\*\*
 
 ## **BOS Errors**
 
