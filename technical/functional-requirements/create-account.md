@@ -29,6 +29,7 @@ The create account screen is opened from the Home Page and is the screen where e
 | Caption | Type | Action |
 | :--- | :--- | :--- |
 | REGISTER | Button | Validate all fields and then return to the [Home Page](home-page.md) |
+| X | Image | Close the screen without adding a new account and return to the [Home Page](home-page.md) |
 
 **Validation**
 
