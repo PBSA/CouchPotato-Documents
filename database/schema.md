@@ -1,6 +1,6 @@
 # Schema
 
-![](../.gitbook/assets/cp_erd%20%282%29.png)
+![](../.gitbook/assets/cp_erd.png)
 
 {% page-ref page="objects/tables.md" %}
 

@@ -42,9 +42,69 @@ Couch Potato aims to improve the data feed and data proxy challenges facing Book
 
 ## Requirements
 
-### 1. User Accounts & Log In
+### 1. Home Page
+
+The home page will be the first page to load and from where the user will be able to login or create an account.
+
+![](../.gitbook/assets/screen-shot-2020-02-25-at-9.41.32-pm.png)
+
+**Inputs**
+
+| Caption | Max Length | Placeholder Text |
+| :--- | :--- | :--- |
+| User Name | 24 | User name |
+| Password | 40 | Password |
+
+**Actions**
+
+| Caption | Type | Action |
+| :--- | :--- | :--- |
+| LOGIN | Button | Validate user name and password and then open the Dashboard |
+| Create Account | Text | Open the create account screen |
+
+**Validation**
+
+| **Exception** | Error Message | Screen |
+| :--- | :--- | :--- |
+| No user name | Username not entered |  |
+| No password | Password not entered |  |
+| Password or user name is invalid | Invalid username or password |  |
 
 
+
+### 2. Create Account
+
+### 3. Dashboard
+
+#### 3.1 Sports Tabs
+
+#### 3.2 Leagues Tabs
+
+#### 3.3 Calendar
+
+#### **3.4 Log Out**
+
+#### **3.5 Preferences**
+
+### 4. Game Selector
+
+#### 4.1 Add New Game
+
+#### 4.2 Change Game Status
+
+#### 4.3 Edit Game
+
+**4.3.1 Delete Game**
+
+**4.3.2 Cancel Game**
+
+### **5. Run Replay**
+
+### **6. Notifications**
+
+\*\*\*\*
+
+\*\*\*\*
 
 
 
