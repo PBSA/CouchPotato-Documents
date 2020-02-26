@@ -24,7 +24,6 @@ description: 'The following is a list of the tables in the Couch Potato database
 | subcode | VARCHAR\(4\) | ❌   | ✅ | ❌  |   |
 | title | VARCHAR\(255\) |  ❌  | ✅ | ❌  |   |
 | message | VARCHAR\(1000\) |  ❌  |  ❌  | ❌  |  NULL |
-| url | VARCHAR\(255\) |  ❌ | ✅ |  ❌ |  |
 
 #### Indexes
 
@@ -46,7 +45,6 @@ CREATE TABLE `errorlog` (
   `subcode` varchar(4) NOT NULL,
   `title` varchar(45) NOT NULL,
   `message` varchar(1000) DEFAULT NULL,
-  `url` varchar(255),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
