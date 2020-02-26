@@ -6,7 +6,7 @@ The home page will be the first page to load and from where the user will be abl
 
 **Inputs**
 
-| Caption | Max Length | Placeholder Text |
+| Name | Max Length | Placeholder Text |
 | :--- | :--- | :--- |
 | User Name | 24 | User name |
 | Password | 40 | Password |
