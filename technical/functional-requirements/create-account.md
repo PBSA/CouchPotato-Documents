@@ -41,3 +41,7 @@ The create account screen is opened from the Home Page and is the screen where e
 | No email | Email not entered |
 | Invalid email, format must be xxx@xxx.xxx | Email is not valid |
 
+{% hint style="warning" %}
+**Note**: For the first release there will be no additional validation on the password format for strength or special characters etc. The only constraint is that the length must be &lt;= 40 characters
+{% endhint %}
+

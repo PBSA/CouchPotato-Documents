@@ -15,8 +15,8 @@ The home page will be the first page to load and from where the user will be abl
 
 | Caption | Type | Action |
 | :--- | :--- | :--- |
-| LOGIN | Button | Validate user name and password and then open the [Dashboard](./#3-dashboard) |
-| Create Account | Text | Open the [create account](./#2-create-account) screen |
+| LOGIN | Button | Validate user name and password and then open the [Dashboard](dashboard.md) |
+| Create Account | Text | Open the [Create Account](create-account.md) screen |
 
 **Validation**
 
