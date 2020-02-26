@@ -59,18 +59,22 @@ The home page will be the first page to load and from where the user will be abl
 
 | Caption | Type | Action |
 | :--- | :--- | :--- |
-| LOGIN | Button | Validate user name and password and then open the Dashboard |
-| Create Account | Text | Open the create account screen |
+| LOGIN | Button | Validate user name and password and then open the [Dashboard](functional-requirements.md#3-dashboard) |
+| Create Account | Text | Open the [create account](functional-requirements.md#2-create-account) screen |
 
 **Validation**
 
-| **Exception** | Error Message | Screen |
-| :--- | :--- | :--- |
-| No user name | Username not entered |  |
-| No password | Password not entered |  |
-| Password or user name is invalid | Invalid username or password |  |
+| **Exception** | Error Message |
+| :--- | :--- |
+| No user name | Username not entered |
+| No password | Password not entered |
+| Password or user name is invalid | Invalid username or password |
 
+**Assets**
 
+couch-potato-main.png
+
+![](../.gitbook/assets/couch-potato-main.png)
 
 ### 2. Create Account
 
