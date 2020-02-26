@@ -44,7 +44,43 @@ Couch Potato aims to improve the data feed and data proxy challenges facing Book
 
 ### 1. User Accounts & Log In
 
+#### 1.1 Create Account
 
+#### 1.2 Log In
+
+#### 1.3 Forgot Password
+
+### 2. Dashboard
+
+#### 2.1 Sports Tabs
+
+#### 2.2 Leagues Tabs
+
+#### 2.3 Calendar
+
+#### **2.4 Log Out**
+
+#### **2.5 Preferences**
+
+### 3. Game Selector
+
+#### 3.1 Add New Game
+
+#### 3.2 Change Game Status
+
+#### 3.3 Edit Game
+
+**3.3.1 Delete Game**
+
+**3.3.2 Cancel Game**
+
+### **4. Run Replay**
+
+### **5. Notifications**
+
+\*\*\*\*
+
+\*\*\*\*
 
 
 
