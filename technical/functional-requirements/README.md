@@ -26,57 +26,7 @@ Couch Potato aims to improve the data feed and data proxy challenges facing Book
 * Becoming a 'pay-per-input' service for the users of Couch Potato that are entering the data. Couch Potato will track every input such that a suitable payment model can be created for reimbursing the users.
 * Keeping the data feed providers accountable. If any instance of Couch Potato, operating as a mainnet data proxy, consistently delivers bad data or is unreliable, then that data proxy won't qualify for payment, and ultimately will be removed by witness consensus.
 
-## High Level Flow Diagrams
 
-### Login and Navigation
-
-![](../.gitbook/assets/cp-dashboard.png)
-
-### Game Selector
-
-![](../.gitbook/assets/cp-selector.png)
-
-### Data Replay
-
-![](../.gitbook/assets/cp-replay.png)
-
-## Requirements
-
-### 1. Home Page
-
-The home page will be the first page to load and from where the user will be able to login or create an account.
-
-![](../.gitbook/assets/screen-shot-2020-02-25-at-9.41.32-pm.png)
-
-**Inputs**
-
-| Caption | Max Length | Placeholder Text |
-| :--- | :--- | :--- |
-| User Name | 24 | User name |
-| Password | 40 | Password |
-
-**Actions**
-
-| Caption | Type | Action |
-| :--- | :--- | :--- |
-| LOGIN | Button | Validate user name and password and then open the [Dashboard](functional-requirements.md#3-dashboard) |
-| Create Account | Text | Open the [create account](functional-requirements.md#2-create-account) screen |
-
-**Validation**
-
-| **Exception** | Error Message |
-| :--- | :--- |
-| No user name | Username not entered |
-| No password | Password not entered |
-| Password or user name is invalid | Invalid username or password |
-
-**Assets**
-
-couch-potato-main.png
-
-![](../.gitbook/assets/couch-potato-main.png)
-
-### 2. Create Account
 
 ### 3. Dashboard
 

@@ -5,7 +5,12 @@
 
 ## Technical
 
-* [Functional Requirements](technical/functional-requirements.md)
+* [Functional Requirements](technical/functional-requirements/README.md)
+  * [Flow Diagrams](technical/functional-requirements/flow-diagrams.md)
+  * [Home Page](technical/functional-requirements/home-page.md)
+  * [Create Account](technical/functional-requirements/create-account.md)
+  * [Dashboard](technical/functional-requirements/dashboard.md)
+  * [Game Selector](technical/functional-requirements/game-selector.md)
 * [Bookie Oracle System \(BOS\)](technical/bookie-oracle-system-bos.md)
 
 ## Getting Started <a id="couch-potato"></a>
