@@ -24,6 +24,7 @@ description: 'The following is a list of the tables in the Couch Potato database
 | subcode | VARCHAR\(4\) | ❌   | ✅ | ❌  |   |
 | title | VARCHAR\(255\) |  ❌  | ✅ | ❌  |   |
 | message | VARCHAR\(1000\) |  ❌  |  ❌  | ❌  |  NULL |
+| url | VARCHAR\(255\) |  ❌ | ✅ |  ❌ |  |
 
 #### Indexes
 
@@ -45,6 +46,7 @@ CREATE TABLE `errorlog` (
   `subcode` varchar(4) NOT NULL,
   `title` varchar(45) NOT NULL,
   `message` varchar(1000) DEFAULT NULL,
+  `url` varchar(255),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
@@ -114,13 +116,10 @@ CREATE TABLE `events` (
 | :--- | :--- | :--- | :--- |
 | PRIMARY | PRIMARY | id, user | ASC |
 | user\_idx | INDEX | user | ASC |
-| event\_idx | INDEX | event | ASC |
 
 #### Foreign Keys
 
-| Foreign Key | Referenced Table | Column | Referenced Column |
-| :--- | :--- | :--- | :--- |
-| fk\_event | 'couch\_potato'.'events' | event | id |
+None
 
 #### Script
 
@@ -273,14 +272,12 @@ CREATE TABLE `leagues` (
 | Index | Type | Columns | Order |
 | :--- | :--- | :--- | :--- |
 | PRIMARY | PRIMARY | id | ASC |
-| idx\_progress \_game | INDEX | game | ASC |
 | fk\_status\_idx | INDEX | status | ASC |
 
 #### Foreign Keys
 
 | Foreign Key | Referenced Table | Column | Referenced Column |
 | :--- | :--- | :--- | :--- |
-| fk\_game | 'couch\_potato'.'games' | game | id |
 | fk\_status | 'couch\_potato'.'status' | status | id |
 
 #### Script

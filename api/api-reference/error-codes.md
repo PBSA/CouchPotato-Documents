@@ -130,6 +130,16 @@
 | :--- | :--- | :--- |
 | 451 |  Invalid data format | Object of type [BOS Schema](../bos-schema.md) |
 
+
+
+### **452- Internal server error**
+
+**BOS node for selected endpoint might not be available**
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 452 |  Internal server error |  |
+
 ## **Incident Errors**
 
 ### **460 - Invalid sport**
