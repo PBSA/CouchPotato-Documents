@@ -118,7 +118,7 @@ POST /add_score/:result_message
 
 * [BOS Errors](error-codes.md#bos-errors)
 * [General Errors](error-codes.md#general-errors)
-* [Add Game Errors](error-codes.md#add-game-errors)
+* [Add Score Errors](error-codes.md#add-scores-errors)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -166,7 +166,7 @@ POST /finish_game/:finish_game_message
 
 * [BOS Errors](error-codes.md#bos-errors)
 * [General Errors](error-codes.md#general-errors)
-* [Add Game Errors](error-codes.md#add-game-errors)
+* [Finish Game Errors](error-codes.md#finish-game-errors)
 {% endtab %}
 
 {% tab title="Example" %}
@@ -213,7 +213,7 @@ POST /add_score/:cancel_game_message
 
 * [BOS Errors](error-codes.md#bos-errors)
 * [General Errors](error-codes.md#general-errors)
-* [Add Game Errors](error-codes.md#add-game-errors)
+* [Cancel Game Errors](error-codes.md#cancel-game-errors)
 {% endtab %}
 
 {% tab title="Example" %}
