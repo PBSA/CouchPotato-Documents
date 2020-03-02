@@ -1,6 +1,6 @@
 # Create Account
 
-The create account screen is opened from the Home Page and is the screen where every new account is created/registered.
+The create account screen is opened from the [Home Page](home-page.md) and is the screen where every new account is created/registered.
 
 ![](../../.gitbook/assets/screen-shot-2020-02-25-at-10.16.00-pm.png)
 
@@ -12,19 +12,51 @@ The create account screen is opened from the Home Page and is the screen where e
 | :--- | :--- | :--- |
 | Create New Account | Static |   |
 | Data Proxy | Static |   |
-| \[proxy name\] | Dynamic | Value set in the config-dataproxy.json |
+| \[proxy name\] | Dynamic | Value set in config-dataproxy.json |
 | \*Required fields | Static |   |
 
 **Inputs**
 
-| Name | Max Length | Min Length | Placeholder Text |
-| :--- | :--- | :--- | :--- |
-| User Name | 24 | 8 | User name |
-| Password | 40 | 8 | Password |
-| Confirm Password | 40 | 8 | Confirm Password |
-| Email Address | 60 | n/a | Email Address |
-
-**Actions**
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Constraints</th>
+      <th style="text-align:left">Placeholder Text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">User Name</td>
+      <td style="text-align:left">
+        <p>Max Length: 24</p>
+        <p>Min Length: 8</p>
+      </td>
+      <td style="text-align:left">User name</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Password</td>
+      <td style="text-align:left">
+        <p>Max Length: 40</p>
+        <p>Min Length: 8</p>
+      </td>
+      <td style="text-align:left">Password</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Confirm Password</td>
+      <td style="text-align:left">
+        <p>Max Length: 40</p>
+        <p>Min Length: 8</p>
+      </td>
+      <td style="text-align:left">Confirm Password</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Email Address</td>
+      <td style="text-align:left">Max Length: 60</td>
+      <td style="text-align:left">Email Address</td>
+    </tr>
+  </tbody>
+</table>**Actions**
 
 | Caption | Type | Action |
 | :--- | :--- | :--- |

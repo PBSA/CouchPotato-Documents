@@ -6,12 +6,33 @@ The home page will be the first page to load and from where the user will be abl
 
 **Inputs**
 
-| Name | Max Length | Placeholder Text |
-| :--- | :--- | :--- |
-| User Name | 24 | User name |
-| Password | 40 | Password |
-
-**Actions**
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Constraints</th>
+      <th style="text-align:left">Placeholder Text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">User Name</td>
+      <td style="text-align:left">
+        <p>Max Length: 24</p>
+        <p>Min Length 8</p>
+      </td>
+      <td style="text-align:left">User name</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Password</td>
+      <td style="text-align:left">
+        <p>Max Length: 40</p>
+        <p>Min Length: 8</p>
+      </td>
+      <td style="text-align:left">Password</td>
+    </tr>
+  </tbody>
+</table>**Actions**
 
 | Caption | Type | Action |
 | :--- | :--- | :--- |
