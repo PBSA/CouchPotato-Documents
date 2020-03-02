@@ -51,5 +51,5 @@ The home page will be the first page to load and from where the user will be abl
 
 couch-potato-main.png
 
-![](../../.gitbook/assets/couch-potato-main.png)
+![couch-potato-main.png](../../.gitbook/assets/couch-potato-main.png)
 

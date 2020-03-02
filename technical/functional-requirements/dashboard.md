@@ -17,20 +17,20 @@ The dashboard header is always shown at the top of the screen and is non-scrolla
 | \[title\] | Dynamic | Default is CouchPotato but can be configured using the `title1` and `title2` properties in the `config.json` file.  |
 | \[icon/Image\] | Dynamic |  The icon or image shown in the top left of the header. Configured using the `iconsmall` property in the `config.json` file.  |
 | \[version\] | Dynamic | The version number/value of the release. Configured using the version property in the `config.json` file.  |
-| Local Time | Static |  |
-| \[time\] | Dynamic | The current time in the format \[hh:mm:ss\]. |
+| Local Time | Static |   |
+| \[time\] | Dynamic | The current time in the format \[hh:mm:ss\]. Time changes every second. |
 | \[username\] | Dynamic | The \(user\)name of the logged in user. |
-
-
 
 ### **Actions**
 
 | Caption | Type | Action |
 | :--- | :--- | :--- |
-| LOGIN | Button | Validate user name and password and then open the [Dashboard](dashboard.md) |
-| Create Account | Text | Open the [Create Account](create-account.md) screen |
+|  👤 | Icon | Open the [account menu](dashboard.md#account-menu). |
+| Replay | Button | Open the Replay screen. |
 
 ### Assets
+
+![couch-potato.png](../../.gitbook/assets/image.png)
 
 ## Sports Tabs
 
