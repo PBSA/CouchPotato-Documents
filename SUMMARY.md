@@ -17,6 +17,7 @@
 
 * [Installation](couch-potato/installation.md)
 * [How to Guide](couch-potato/how-to-guide.md)
+* [FAQ](couch-potato/faq.md)
 
 ## Database
 

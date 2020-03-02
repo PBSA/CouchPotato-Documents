@@ -4,7 +4,7 @@ The home page will be the first page to load and from where the user will be abl
 
 ![](../../.gitbook/assets/screen-shot-2020-02-25-at-9.41.32-pm.png)
 
-**Inputs**
+### **Inputs**
 
 <table>
   <thead>
@@ -32,14 +32,14 @@ The home page will be the first page to load and from where the user will be abl
       <td style="text-align:left">Password</td>
     </tr>
   </tbody>
-</table>**Actions**
+</table>### **Actions**
 
 | Caption | Type | Action |
 | :--- | :--- | :--- |
 | LOGIN | Button | Validate user name and password and then open the [Dashboard](dashboard.md) |
 | Create Account | Text | Open the [Create Account](create-account.md) screen |
 
-**Validation**
+### **Validation**
 
 | **Exception** | Error Message |
 | :--- | :--- |
@@ -47,7 +47,7 @@ The home page will be the first page to load and from where the user will be abl
 | No password | Password not entered |
 | Password or user name is invalid | Invalid username or password |
 
-**Assets**
+### **Assets**
 
 couch-potato-main.png
 

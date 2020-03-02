@@ -10,6 +10,28 @@ The components of the dashboard are:
 
 The dashboard header is always shown at the top of the screen and is non-scrollable. That is to say that if the application is run on a small display such that the user has to scroll up and down to see all of the dashboard, the header is always 'pinned' at the top of the screen.
 
+### **Captions**
+
+| Text | Type | Comments |
+| :--- | :--- | :--- |
+| \[title\] | Dynamic | Default is CouchPotato but can be configured using the `title1` and `title2` properties in the `config.json` file.  |
+| \[icon/Image\] | Dynamic |  The icon or image shown in the top left of the header. Configured using the `iconsmall` property in the `config.json` file.  |
+| \[version\] | Dynamic | The version number/value of the release. Configured using the version property in the `config.json` file.  |
+| Local Time | Static |  |
+| \[time\] | Dynamic | The current time in the format \[hh:mm:ss\]. |
+| \[username\] | Dynamic | The \(user\)name of the logged in user. |
+
+
+
+### **Actions**
+
+| Caption | Type | Action |
+| :--- | :--- | :--- |
+| LOGIN | Button | Validate user name and password and then open the [Dashboard](dashboard.md) |
+| Create Account | Text | Open the [Create Account](create-account.md) screen |
+
+### Assets
+
 ## Sports Tabs
 
 The sports tab runs vertically across the dashboard and displays one tab for each sport that is enabled. The tabs are dynamic and configured through the MySql database [`Sports`](../../database/objects/tables.md#sports) table. 
@@ -55,7 +77,11 @@ By default, when a new sports tab is selected the league will default to the fir
       </td>
     </tr>
   </tbody>
-</table>## Leagues Tabs
+</table>{% hint style="warning" %}
+**Note**: There is no restriction on the icons/images to be used for each sport, but logically they should reflect the sport!
+{% endhint %}
+
+## Leagues Tabs
 
 
 
