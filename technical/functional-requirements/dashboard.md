@@ -1,10 +1,14 @@
 # Dashboard
 
-The dashboard is the main screen and is opened from the [Home Page](home-page.md) once the user enters correct account credentials \(username and password\).
+The dashboard is the main screen and is opened from the [Home Page](home-page.md) as soon as the user is logged in.
 
 ![](../../.gitbook/assets/screen-shot-2020-03-02-at-2.50.48-pm.png)
 
 The components of the dashboard are:
+
+## Header
+
+The dashboard header is always shown at the top of the screen and is non-scrollable. That is to say that if the application is run on a small display such that the user has to scroll up and down to see all of the dashboard, the header is always 'pinned' at the top of the screen.
 
 ## Sports Tabs
 
@@ -12,7 +16,7 @@ The sports tab runs vertically across the dashboard and displays one tab for eac
 
 The order the sports tabs are displayed in is defined by their `id` value in the [`Sports`](../../database/objects/tables.md#sports)  table.
 
-There is no limit on the number of sports tabs that can be created. If the tabs reach the limit of the application horizontally then they will stack in to multiple rows.
+There is no limit on the number of sports tabs that can be created. If the tabs reach the limit of the application horizontally then they will stack in to multiple rows. Realistically there should never be so many sports enabled at any one time to cause the tabs to be stacked.
 
 {% hint style="danger" %}
 **Important**: The sports tabs must be 100% configurable through the database only. Sports must be added or removed without any code changes.
@@ -24,8 +28,6 @@ Clicking on any unselected tab will:
 2. Change the calendar display to show only events for the selected sport and league.
 
 By default, when a new sports tab is selected the league will default to the first one in the list.
-
-
 
 **Captions**
 
