@@ -91,6 +91,8 @@ By default, when a new sports tab is selected the league will default to the fir
 | :--- | :--- | :--- |
 | \[Sport\] | Text | Change calendar and leagues to selected sport. |
 
+## Leagues Tab
+
 The leagues tab runs vertically down the left side of the dashboard and displays one tab for each league that is configured for the selected sport. The tabs are dynamic and configured through the MySql database [`Leagues`](../../database/objects/tables.md#leagues) table. 
 
 ![](../../.gitbook/assets/screen-shot-2020-03-02-at-4.06.55-pm.png)
@@ -131,7 +133,13 @@ Clicking on any unselected tab will change the calendar display to show only eve
       </td>
     </tr>
   </tbody>
-</table>## Calendar
+</table>### **Actions**
+
+| Caption | Type | Action |
+| :--- | :--- | :--- |
+| \[Sport\] | Text | Change calendar to the selected league of the selected sport. |
+
+## Calendar
 
 The calendar component is the main 'engine' of the application. It's here that the user will navigate through, enter and select new games.
 
