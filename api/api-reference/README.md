@@ -39,7 +39,7 @@ postData.league = "EPL";
 postData.user = 1;
 postData.home = "Chelsea";
 postData.away = "Manchester United";
-postData.start_time = "2020-02-04T18:33:00.000Z";
+postData.start_time = "2020-02-04T18:33:00Z";
 http.post(url + "add_game.php?" , postData, {headers}).map();
 ```
 {% endtab %}

@@ -33,7 +33,7 @@ Parameters for new BOS incident message to create a game and add to Couch Potato
   "league": "EPL",
   "home": "Norwich City",
   "away": "Manchester City",
-  "start_time": "2020-02-04T18:33:00.000Z",
+  "start_time": "2020-02-04T18:33:00Z",
   "user": 35,
   "match_id": 60
 }
@@ -65,9 +65,9 @@ Parameters for new BOS incident message to start a game and add to Couch Potato 
   "league": "EPL",
   "home": "Norwich City",
   "away": "Manchester City",
-  "start_time": "2020-02-04T18:33:00.000Z",
+  "start_time": "2020-02-04T18:33:00Z",
   "match_id": 60,
-  "whistle_start_time": "2020-02-04T18:40:00.000Z"
+  "whistle_start_time": "2020-02-04T18:40:00Z"
 }
 ```
 {% endtab %}
@@ -98,7 +98,7 @@ Parameters for new BOS incident message to set the score of a game and add to Co
   "league": "EPL",
   "home": "Norwich City",
   "away": "Manchester City",
-  "start_time": "2020-02-04T18:33:00.000Z",
+  "start_time": "2020-02-04T18:33:00Z",
   "home_score": 1,
   "away_score": 4,
   "match_id": 60
@@ -132,9 +132,9 @@ Parameters for new BOS incident message to finish/complete a game and add to Cou
   "league": "EPL",
   "home": "Norwich City",
   "away": "Manchester City",
-  "start_time": "2020-02-04T18:33:00.000Z",
+  "start_time": "2020-02-04T18:33:00Z",
   "match_id": 60,
-  "whistle_end_time": "2020-02-04T20:30:00.000Z"
+  "whistle_end_time": "2020-02-04T20:30:00Z"
 }
 ```
 {% endtab %}
@@ -163,7 +163,7 @@ Parameters for new BOS incident message to cancel a game and add to Couch Potato
   "league": "EPL",
   "home": "Norwich City",
   "away": "Manchester City",
-  "start_time": "2020-02-04T18:33:00.000Z",
+  "start_time": "2020-02-04T18:33:00Z",
   "match_id": 60,
 }
 ```

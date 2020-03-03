@@ -50,7 +50,7 @@ These objects are used for the five BOS incident messages. The objects are creat
         "home":"Leicester City",
         "away":"Aston Villa",
         "sport":"Soccer",
-        "start_time":"2020-05-01T01:12:00.000Z",
+        "start_time":"2020-05-01T01:12:00Z",
         "event_group_name":"EPL"
     },
     "provider_info":
@@ -108,14 +108,14 @@ These objects are used for the five BOS incident messages. The objects are creat
     "timestamp":"2020-01-28T14:41:13.705Z",
     "arguments":
     {
-        "whistle_start_time":"2020-05-01T01:15:00.000Z"
+        "whistle_start_time":"2020-05-01T01:15:00Z"
     },
     "id":
     {
         "home":"Leicester City",
         "away":"Aston Villa",
         "sport":"Soccer",
-        "start_time":"2020-05-01T01:12:00.000Z",
+        "start_time":"2020-05-01T01:12:00Z",
         "event_group_name":"EPL"
     },
     "provider_info":
@@ -182,7 +182,7 @@ These objects are used for the five BOS incident messages. The objects are creat
         "home":"Leicester City",
         "away":"Aston Villa",
         "sport":"Soccer",
-        "start_time":"2020-05-01T01:12:00.000Z",
+        "start_time":"2020-05-01T01:12:00Z",
         "event_group_name":"EPL"
     },
     "provider_info":
@@ -240,14 +240,14 @@ These objects are used for the five BOS incident messages. The objects are creat
     "timestamp":"2020-01-28T14:41:13.705Z",
     "arguments":
     {
-         "whistle_start_time":"2020-05-01T01:16:30.000Z"
+         "whistle_start_time":"2020-05-01T01:16:00Z"
     },
     "id":
     {
         "home":"Leicester City",
         "away":"Aston Villa",
         "sport":"Soccer",
-        "start_time":"2020-05-01T01:12:00.000Z",
+        "start_time":"2020-05-01T01:12:00Z",
         "event_group_name":"EPL"
     },
     "provider_info":
@@ -310,7 +310,7 @@ These objects are used for the five BOS incident messages. The objects are creat
         "home":"Leicester City",
         "away":"Aston Villa",
         "sport":"Soccer",
-        "start_time":"2020-05-01T01:12:00.000Z",
+        "start_time":"2020-05-01T01:12:00Z",
         "event_group_name":"EPL"
     },
     "provider_info":
