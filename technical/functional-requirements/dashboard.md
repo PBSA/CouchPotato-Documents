@@ -85,7 +85,11 @@ By default, when a new sports tab is selected the league will default to the fir
 **Note**: There is no restriction on the icons/images to be used for each sport, but logically they should reflect the sport!
 {% endhint %}
 
-## Leagues Tabs
+### **Actions**
+
+| Caption | Type | Action |
+| :--- | :--- | :--- |
+| \[Sport\] | Text | Change calendar and leagues to selected sport. |
 
 The leagues tab runs vertically down the left side of the dashboard and displays one tab for each league that is configured for the selected sport. The tabs are dynamic and configured through the MySql database [`Leagues`](../../database/objects/tables.md#leagues) table. 
 
