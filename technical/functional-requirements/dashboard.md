@@ -131,7 +131,7 @@ Clicking on any unselected tab will change the calendar display to show only eve
 
 The calendar component is the main 'engine' of the application. It's here that the user will navigate through, enter and select new games.
 
-
+![](../../.gitbook/assets/screen-shot-2020-03-02-at-4.44.18-pm.png)
 
 ## Notifications
 
