@@ -344,3 +344,11 @@
 | :--- | :--- | :--- |
 | 496 | Game can't be canceled | A game can only be canceled if it hasn't started, or if it's still in progress |
 
+## Server Errors
+
+### 540 - Unable to log in
+
+| **Sub Code** | Title | Message |
+| :--- | :--- | :--- |
+| 540 | Unable to log in | Could happen due to gateway time out errors or web service failure |
+

@@ -9,13 +9,21 @@
   * [Flow Diagrams](technical/functional-requirements/flow-diagrams.md)
   * [Home Page](technical/functional-requirements/home-page.md)
   * [Create Account](technical/functional-requirements/create-account.md)
-  * [Dashboard](technical/functional-requirements/dashboard.md)
+  * [Dashboard](technical/functional-requirements/dashboard/README.md)
+    * [Header](technical/functional-requirements/dashboard/header.md)
+    * [Sport Tabs](technical/functional-requirements/dashboard/sport-tabs.md)
+    * [League Tabs](technical/functional-requirements/dashboard/league-tabs.md)
+    * [Calendar](technical/functional-requirements/dashboard/calendar.md)
+    * [Notifications](technical/functional-requirements/dashboard/notifications.md)
+    * [Replay](technical/functional-requirements/dashboard/replay.md)
+    * [Account Menu](technical/functional-requirements/dashboard/account-menu.md)
   * [Game Selector](technical/functional-requirements/game-selector.md)
 * [Bookie Oracle System \(BOS\)](technical/bookie-oracle-system-bos.md)
 
 ## Getting Started <a id="couch-potato"></a>
 
 * [Installation](couch-potato/installation.md)
+* [White-labelling](couch-potato/white-labelling.md)
 * [How to Guide](couch-potato/how-to-guide.md)
 * [FAQ](couch-potato/faq.md)
 
