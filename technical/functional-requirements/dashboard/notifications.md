@@ -4,7 +4,7 @@ The notifications panel is displayed on the right side of the dashboard and is w
 
 ![](../../../.gitbook/assets/screen-shot-2020-03-06-at-9.49.06-am.png)
 
-The notifications will be refreshed at a configurable millisecond interval set in `config-dataproxy.json`. The default will be 3,000 \(3 seconds\).
+The notifications will be refreshed at a configurable millisecond interval set in the `notifications->delay` property in `config-dataproxy.json`. The default will be 3,000 \(3 seconds\).
 
 Each notification will take the form of a 'note' which will have the following information:
 
@@ -49,10 +49,54 @@ The duration of any sport is set in the `duration` column of the [`sport`](../..
 
 ### Note Attributes
 
-| Text/Image | Type | Comments |
-| :--- | :--- | :--- |
-| \[icon\] | Dynamic |  The icon associated with the league for the game. |
-| \[start date/time\] | Dynamic | The start date and time of the game |
-| \[sport\] \(\[league\]\) | Dynamic | The sport and league of the game |
-| \[home team\] v \[away team\] | Dynamic | The home and away teams |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Text/Image</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">[icon]</td>
+      <td style="text-align:left">Dynamic</td>
+      <td style="text-align:left">The icon associated with the league for the game.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">[start date/time]</td>
+      <td style="text-align:left">Dynamic</td>
+      <td style="text-align:left">The start date and time of the game</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">[sport] ([league])</td>
+      <td style="text-align:left">Dynamic</td>
+      <td style="text-align:left">The sport and league of the game</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">[home team] v [away team]</td>
+      <td style="text-align:left">Dynamic</td>
+      <td style="text-align:left">The home and away teams</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">[Status]</td>
+      <td style="text-align:left">Dynamic</td>
+      <td style="text-align:left">
+        <p>The time in minutes until start or end and the following text according
+          to the rules <a href="notifications.md#colour">above</a>:</p>
+        <p></p>
+        <p><code>STARTS IN [x] MINUTES</code>
+        </p>
+        <p><code>SHOULD HAVE STARTED</code>
+        </p>
+        <p><code>MIGHT FINISH FINISH IN [x] MINUTES</code>
+        </p>
+        <p><code>MIGHT HAVE FINISHED</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>Removing Notes
+
+Each note is tied to a game and as such will be automatically removed from the notification panel as soon as the status of the game is updated. For example, if a note states that game x "SHOULD HAVE STARTED", then as soon as the game is started from the game selector, the note will be removed.
 
