@@ -8,7 +8,7 @@ The notifications will be refreshed at a configurable millisecond interval set i
 
 Each notification will take the form of a 'note' which will have the following information:
 
-### Colour
+### Colours
 
 The colour of the notes is very important and must be visibly obvious. The colour of the note is set by the following criteria:
 
