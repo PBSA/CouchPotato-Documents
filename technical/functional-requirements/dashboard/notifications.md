@@ -6,7 +6,9 @@ The notifications panel is displayed on the right side of the dashboard and is w
 
 The notifications will be refreshed at a configurable millisecond interval set in `config-dataproxy.json`. The default will be 3,000 \(3 seconds\).
 
+Each notification will take the form of a 'note' which will have the following information:
 
+#### Colour
 
 
 
