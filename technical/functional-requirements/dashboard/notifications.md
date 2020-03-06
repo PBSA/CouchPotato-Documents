@@ -96,7 +96,11 @@ The duration of any sport is set in the `duration` column of the [`sport`](../..
       </td>
     </tr>
   </tbody>
-</table>Removing Notes
+</table>### Removing Notes
 
 Each note is tied to a game and as such will be automatically removed from the notification panel as soon as the status of the game is updated. For example, if a note states that game x "SHOULD HAVE STARTED", then as soon as the game is started from the game selector, the note will be removed.
+
+To keep things tidy notes can be set to be be automatically removed after a set interval \(in hours\). This means that if games haven't been started, instead of the warning note appearing even after \[x\] days when there would be no point updating the status of the game, it will be removed.
+
+The number of hours after which a notes should be removed is set in the `notifications->end` property in `config-dataproxy.json.` The default value is 240 \(10 days\).
 
