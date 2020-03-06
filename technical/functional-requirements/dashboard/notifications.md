@@ -8,13 +8,23 @@ The notifications will be refreshed at a configurable millisecond interval set i
 
 Each notification will take the form of a 'note' which will have the following information:
 
-#### Colour
+### Colour
 
+The colour of the notes is very important and must be visibly obvious. The colour of the note is set by the following criteria:
 
+**Green**
+
+* Any game that is in the range 30 - 15 minutes to it's scheduled start time.
+* Any game that is in the range 30 - 15 minutes from it's predicted end time.
 
 ![](../../../.gitbook/assets/screen-shot-2020-03-04-at-8.02.09-pm.png)
 
-![](../../../.gitbook/assets/screen-shot-2020-03-04-at-8.02.20-pm.png)
+**Amber**
+
+* Any game that is in the range 1 - 14 minutes to it's scheduled start time.
+* Any game that is in the range 1 - 14 minutes from it's predicted end time.
 
 ![](../../../.gitbook/assets/screen-shot-2020-03-04-at-7.53.24-pm.png)
+
+![](../../../.gitbook/assets/screen-shot-2020-03-04-at-8.02.20-pm.png)
 
