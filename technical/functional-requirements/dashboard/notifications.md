@@ -41,9 +41,18 @@ The end time is more complicated because for many sports it's very hard to predi
 
 However, a game of football, even thought it's four quarters of 15 minutes, has time-outs and regular clock stops, so the time the game will finish is a very broad average.
 
-The duration of any sport is set in the `duration` column of the [`sport`](../../../database/objects/tables.md#sports) table. The default values are based on the accepted average durations.
+The duration of any sport is set in the `duration` column of the [`sport`](../../../database/objects/tables.md#sports) table. The default values are based on the accepted average durations for these sports.
 
 {% hint style="warning" %}
 **Note**: Because the end times are largely unpredictable the notification for game finishes should say "might have finished" rather than "should have finished"
 {% endhint %}
+
+### Note Attributes
+
+| Text/Image | Type | Comments |
+| :--- | :--- | :--- |
+| \[icon\] | Dynamic |  The icon associated with the league for the game. |
+| \[start date/time\] | Dynamic | The start date and time of the game |
+| \[sport\] \(\[league\]\) | Dynamic | The sport and league of the game |
+| \[home team\] v \[away team\] | Dynamic | The home and away teams |
 
