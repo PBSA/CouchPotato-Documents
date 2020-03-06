@@ -33,3 +33,9 @@ The colour of the notes is very important and must be visibly obvious. The colou
 
 ![](../../../.gitbook/assets/screen-shot-2020-03-04-at-8.02.20-pm.png)
 
+### Start and End Times
+
+The notifications rely on the start and end times of each game. The start time is taken as the time entered for any game when it was created, this is the only value that can be used.
+
+The end time is more complicated because for many sports it's very hard to predict when a game ends because of time-outs, extra-time etc. For example, a game of soccer is much more predictable because the clock doesn't stop during play. So a game is likely to be two halves of 45 minutes, 15 minutes of half-time and perhaps 5 minutes of extra time, so 45+45+15+5 = 110 minutes.
+
