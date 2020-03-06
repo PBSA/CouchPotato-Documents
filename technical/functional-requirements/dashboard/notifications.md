@@ -104,3 +104,11 @@ To keep things tidy notes can be set to be be automatically removed after a set 
 
 The number of hours after which a notes should be removed is set in the `notifications->end` property in `config-dataproxy.json.` The default value is 240 \(10 days\).
 
+### Hyperlinking
+
+Each note is 'clickable', and when any note is clicked on it will automatically open the game selector for the selected date / league / sport combination. The game in the selector, that corresponds to the game on the selected note, will be highlighted for easy identification. For more information see:
+
+{% page-ref page="../game-selector.md" %}
+
+
+
