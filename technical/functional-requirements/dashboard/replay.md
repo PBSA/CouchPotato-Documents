@@ -14,7 +14,7 @@ Normally this feature shouldn't need to be used very often as a create incident 
 **Important**: The Replay feature can only be used for games that are not yet started. Once a game is started a new create incident would be ignored.
 {% endhint %}
 
-Sports and leagues can be selected individually using check-boxes, or all sports and leagues can be selected or de-selected.
+Sports and leagues can be selected individually using check-boxes, or all sports and leagues can be selected or de-selected using the Select All checkbox/toggle.
 
 The range of data to be replayed will be set from the Start and End fields.
 
@@ -45,20 +45,14 @@ The range of data to be replayed will be set from the Start and End fields.
 
 | Caption | Type | Action |
 | :--- | :--- | :--- |
-| REGISTER | Button | Validate all fields and then return to the [Home Page](../home-page.md) |
-| X | Image | Close the screen without adding a new account and return to the [Home Page](../home-page.md) |
+| REPLAY ⤵   | Button | Start the Replay |
+| X | Image | Close the screen. |
 
 **Validation**
 
 | **Exception** | Error Message |
 | :--- | :--- |
 | No user name | Username not entered |
-| No password | Password not entered |
-| Password too short | Password must be at least 8 characters |
-| No confirm password | Confirm password not entered |
-| Password and confirm password not the same | Password and Confirm Password are different |
-| No email | Email not entered |
-| Invalid email, format must be xxx@xxx.xxx | Email is not valid |
 
 
 
