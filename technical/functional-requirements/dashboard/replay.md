@@ -28,51 +28,20 @@ The range of data to be replayed will be set from the Start and End fields.
 | \[league\] | Dynamic |  All league names associated with the selected sport taken from the [`leagues`](../../../database/objects/tables.md#leagues) table |
 | \[sport icon\] | Dynamic | Applicable sport icon in the [`sport`](../../../database/objects/tables.md#sports) table |
 | \[league icon\] | Dynamic | Applicable league icon in the [`leagues`](../../../database/objects/tables.md#leagues) table |
-| Start | Static |  |
-| End | Static |  |
+| Start: | Static |  |
+| End: | Static |  |
 
 **Inputs**
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Constraints</th>
-      <th style="text-align:left">Placeholder Text</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">User Name</td>
-      <td style="text-align:left">
-        <p>Max Length: 24</p>
-        <p>Min Length: 8</p>
-      </td>
-      <td style="text-align:left">User name</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Password</td>
-      <td style="text-align:left">
-        <p>Max Length: 40</p>
-        <p>Min Length: 8</p>
-      </td>
-      <td style="text-align:left">Password</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Confirm Password</td>
-      <td style="text-align:left">
-        <p>Max Length: 40</p>
-        <p>Min Length: 8</p>
-      </td>
-      <td style="text-align:left">Confirm Password</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Email Address</td>
-      <td style="text-align:left">Max Length: 60</td>
-      <td style="text-align:left">Email Address</td>
-    </tr>
-  </tbody>
-</table>**Actions**
+| Name | Type | Constraints |
+| :--- | :--- | :--- |
+| Select All | Checkbox |   |
+| \[sport\] | Checkbox |   |
+| \[league\] | Checkbox |   |
+| Start | List | Valid date from list |
+| End | List | Valid date from list |
+
+**Actions**
 
 | Caption | Type | Action |
 | :--- | :--- | :--- |
