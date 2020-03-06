@@ -52,9 +52,9 @@ The range of data to be replayed will be set from the Start and End fields.
 
 | **Exception** | Error Message |
 | :--- | :--- |
-| No user name | Username not entered |
-|  |  |
-|  |  |
+| No start date | Start date not entered |
+| No end date | End data not entered |
+| End date before start date | End date is before the Start date |
 
 
 
