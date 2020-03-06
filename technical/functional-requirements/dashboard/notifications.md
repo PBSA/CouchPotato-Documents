@@ -39,3 +39,11 @@ The notifications rely on the start and end times of each game. The start time i
 
 The end time is more complicated because for many sports it's very hard to predict when a game ends because of time-outs, extra-time etc. For example, a game of soccer is much more predictable because the clock doesn't stop during play. So a game is likely to be two halves of 45 minutes, 15 minutes of half-time and perhaps 5 minutes of extra time, so 45+45+15+5 = 110 minutes.
 
+However, a game of football, even thought it's four quarters of 15 minutes, has time-outs and regular clock stops, so the time the game will finish is a very broad average.
+
+The duration of any sport is set in the `duration` column of the [`sport`](../../../database/objects/tables.md#sports) table. The default values are based on the accepted average durations.
+
+{% hint style="warning" %}
+**Note**: Because the end times are largely unpredictable the notification for game finishes should say "might have finished" rather than "should have finished"
+{% endhint %}
+
