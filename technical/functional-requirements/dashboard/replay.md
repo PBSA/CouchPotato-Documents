@@ -28,8 +28,8 @@ The range of data to be replayed will be set from the Start and End fields.
 | \[league\] | Dynamic |  All league names associated with the selected sport taken from the [`leagues`](../../../database/objects/tables.md#leagues) table |
 | \[sport icon\] | Dynamic | Applicable sport icon in the [`sport`](../../../database/objects/tables.md#sports) table |
 | \[league icon\] | Dynamic | Applicable league icon in the [`leagues`](../../../database/objects/tables.md#leagues) table |
-| Start: | Static |  |
-| End: | Static |  |
+| Start: | Static |   |
+| End: | Static |   |
 
 **Inputs**
 
