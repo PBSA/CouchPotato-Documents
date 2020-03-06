@@ -53,6 +53,8 @@ The range of data to be replayed will be set from the Start and End fields.
 | **Exception** | Error Message |
 | :--- | :--- |
 | No user name | Username not entered |
+|  |  |
+|  |  |
 
 
 
