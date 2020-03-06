@@ -26,11 +26,9 @@ The colour of the notes is very important and must be visibly obvious. The colou
 
 ![](../../../.gitbook/assets/screen-shot-2020-03-04-at-7.53.24-pm.png)
 
-
-
 **Red**
 
-* Any game that is in the range 30 - 15 minutes to it's scheduled start time.
+* Any game that should have started according to its scheduled start time.
 * Any game that is in the range 30 - 15 minutes to it's predicted end time.
 
 ![](../../../.gitbook/assets/screen-shot-2020-03-04-at-8.02.20-pm.png)
