@@ -8,7 +8,11 @@
 
 {% page-ref page="couch-potato/installation.md" %}
 
-{% page-ref page="couch-potato/how-to-guide.md" %}
+{% page-ref page="couch-potato/white-labelling.md" %}
+
+{% page-ref page="help/faq.md" %}
+
+{% page-ref page="help/how-to-guide.md" %}
 
 
 

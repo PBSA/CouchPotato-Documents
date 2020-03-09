@@ -25,8 +25,11 @@
 
 * [Installation](couch-potato/installation.md)
 * [White-labelling](couch-potato/white-labelling.md)
-* [How to Guide](couch-potato/how-to-guide.md)
-* [FAQ](couch-potato/faq.md)
+
+## Help
+
+* [How to Guide](help/how-to-guide.md)
+* [FAQ](help/faq.md)
 
 ## Database
 
