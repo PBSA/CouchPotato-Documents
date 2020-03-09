@@ -66,3 +66,7 @@ The Change Password screen is opened by clicking on the `Change Password` menu i
 | Confirm new password too short | Confirm new password must be at least 8 characters |
 | New and confirm new don't match | New password and confirm new password are different |
 
+{% hint style="warning" %}
+**Note**: For the first release there will be no additional validation on the password format for strength or special characters etc. The only constraint is that the length must be &gt;=8 and &lt;= 40 characters.
+{% endhint %}
+
