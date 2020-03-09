@@ -140,5 +140,63 @@ The selector grid is where all games are recorded as they get entered and moved 
 
 The selector grid is made up as follows:
 
-
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Column</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Start</td>
+      <td style="text-align:left">Text</td>
+      <td style="text-align:left">Start time of the game</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Game</td>
+      <td style="text-align:left">Text</td>
+      <td style="text-align:left">Home team v Away team with logos</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Home Score</td>
+      <td style="text-align:left">Input</td>
+      <td style="text-align:left">The home team score.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Away Score</td>
+      <td style="text-align:left">Input</td>
+      <td style="text-align:left">The away team score.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Actions</td>
+      <td style="text-align:left">Button/Hyperlinks</td>
+      <td style="text-align:left">
+        <p>Changes according to the status of a game. Available options are:</p>
+        <ul>
+          <li>Start
+            <br />Finish
+            <br />Cancel
+            <br />Delete</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Status</td>
+      <td style="text-align:left">Caption</td>
+      <td style="text-align:left">
+        <p>The status of the game, one of:</p>
+        <ul>
+          <li>
+            <p>Not Started</p>
+            <p>In Progress</p>
+            <p>Finished</p>
+            <p>Cancelled</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
