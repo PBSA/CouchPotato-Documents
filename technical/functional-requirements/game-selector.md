@@ -28,7 +28,7 @@ To add new game use the input fields at the bottom of the screen and then click 
 | :--- | :--- | :--- |
 | Start | Date Selector |  Any valid date |
 | Home Team | Drop Down selector | Drop down list of all teams associated with the selected sport and league. |
-| Away  | Drop Down selector | Drop down list of all teams associated with the selected sport and league. |
+| Away Team | Drop Down selector | Drop down list of all teams associated with the selected sport and league. |
 
 **Actions**
 
@@ -48,4 +48,63 @@ To add new game use the input fields at the bottom of the screen and then click 
 {% hint style="warning" %}
 **Note**: There is no validation to stop the same game from being created twice. The reason for this is because it's common in certain sports to have 'double-headers' where two teams play each other more than once in a day.
 {% endhint %}
+
+{% hint style="warning" %}
+**Note**: There is no validation to stop a game start time from being in the passed. This is because game start times do change and it maybe necessary to start a game in the selector that has already started in real time.
+{% endhint %}
+
+Each new game will have its status set to `Not Started`
+
+A [`create`](../../api/bos-schema.md#create) incident will be pushed to the BOS instances.
+
+## Start Game
+
+To start a game click on the `Start` button next to the game. The game status will then change to `In Progress`
+
+**Actions**
+
+| Caption | Type | Action |
+| :--- | :--- | :--- |
+| `Start`  | Button | Start the selected game. |
+
+An [`in_progress`](../../api/bos-schema.md#in_progress) incident will be pushed to the BOS instances with the `whistle_start_time` set to the time when the `Start` button was clicked.
+
+## Finish Game
+
+To finish a game enter the score for both home and away teams and click on the `Finish` button next to the game. The game status will then change to `Finished`
+
+**Inputs**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Constraints</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Home Score</td>
+      <td style="text-align:left">Text Box</td>
+      <td style="text-align:left">Numeric, max 999</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p>Away</p>
+        <p>Score</p>
+      </td>
+      <td style="text-align:left">Text Box</td>
+      <td style="text-align:left">Numeric, max 999</td>
+    </tr>
+  </tbody>
+</table>**Actions**
+
+| Caption | Type | Action |
+| :--- | :--- | :--- |
+| `Finish`  | Button | Finish the selected game and record the score. |
+
+A [`result`](../../api/bos-schema.md#result) incident followed by a [`finish`](../../api/bos-schema.md#finish) incident will be pushed to the BOS instances with the `whistle_end_time` set to the time when the Finish button was clicked, and the result to the home score and away score values.
+
+
 
