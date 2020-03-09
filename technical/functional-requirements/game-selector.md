@@ -134,5 +134,11 @@ A `canceled` incident will be sent to BOS so that BOS can tag the game int he sa
 **Note**: The difference between a canceled game and a deleted game is that a deleted game is basically a game that was entered in error and once deleted is removed from the database so it can be re-entered correctly if needed. A canceled game is a proper game that for one reason or other doesn't take place after being created correctly.
 {% endhint %}
 
+## Selector Grid
+
+The selector grid is where all games are recorded as they get entered and moved through the workflow.
+
+The selector grid is made up as follows:
+
 
 
