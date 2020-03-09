@@ -110,3 +110,21 @@ A [`result`](../../api/bos-schema.md#result) incident followed by a [`finish`](.
 Note: It's not possible to corrects scores and re-send them to BOS. For this reason the `finish` incident is sent immediately after the `result` incident as a result of just clicking on the `Finish` button.
 {% endhint %}
 
+## Cancel Game
+
+Any game can be cancelled as long as it's either `Not Started` or `In Progress.`
+
+To cancel a game click on the `Cancel` text next to the game. The game status will then change to `Canceled`
+
+A `cancelled` incident will be sent to BOS.
+
+{% hint style="info" %}
+**Tip**: for the purposes of BOS incidents 'canceled' can also be interpreted as postponed but not as delayed. A delayed game is expected to restart. But once a game has been canceled it can't be restarted. If a game is canceled and then played the following day it would have to re-created with the new start time.
+{% endhint %}
+
+
+
+
+
+## Delete Game
+
