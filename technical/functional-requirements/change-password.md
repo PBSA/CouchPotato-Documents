@@ -4,8 +4,6 @@ The Change Password screen is opened by clicking on the `Change Password` menu i
 
 ![](../../.gitbook/assets/screen-shot-2020-03-09-at-4.19.53-pm.png)
 
-
-
 **Captions**
 
 | Text | Type | Comments |
@@ -30,7 +28,7 @@ The Change Password screen is opened by clicking on the `Change Password` menu i
         <p>Max Length: 40</p>
         <p>Min Length: 8</p>
       </td>
-      <td style="text-align:left">Password</td>
+      <td style="text-align:left">Current Password</td>
     </tr>
     <tr>
       <td style="text-align:left">New Password</td>
@@ -38,7 +36,7 @@ The Change Password screen is opened by clicking on the `Change Password` menu i
         <p>Max Length: 40</p>
         <p>Min Length: 8</p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">New Password</td>
     </tr>
     <tr>
       <td style="text-align:left">Confirm Password</td>
@@ -53,8 +51,8 @@ The Change Password screen is opened by clicking on the `Change Password` menu i
 
 | Caption | Type | Action |
 | :--- | :--- | :--- |
-| REGISTER | Button | Validate all fields and then return to the [Home Page](home-page.md) |
-| X | Image | Close the screen without adding a new account and return to the [Home Page](home-page.md) |
+| CHANGE PASSWORD | Button | Validate all fields then update the password and return to the [Dashboard](dashboard/) |
+| X | Image | Close the screen without adding a new account and return to the [Dashboard](dashboard/) |
 
 **Validation**
 
