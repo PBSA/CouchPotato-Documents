@@ -45,3 +45,7 @@ To add new game use the input fields at the bottom of the screen and then click 
 | Away Team | No away team selected |
 | Home Team and Away Team must be different | Teams must be different |
 
+{% hint style="warning" %}
+**Note**: There is no validation to stop the same game from being created twice. The reason for this is because it's common in certain sports to have 'double-headers' where two teams play each other more than once in a day.
+{% endhint %}
+
