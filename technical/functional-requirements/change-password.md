@@ -58,8 +58,11 @@ The Change Password screen is opened by clicking on the `Change Password` menu i
 
 | **Exception** | Error Message |
 | :--- | :--- |
-| No user name | Username not entered |
-| No password | Password not entered |
-| Password too short | Password must be at least 8 characters |
-| No confirm password | Confirm password not entered |
+| No current password | Current password not entered |
+| Current password is wrong | Current password is incorrect. |
+| No new password | New password not entered |
+| New password too short | New password must be at least 8 characters |
+| No confirm new password | Confirm new password not entered. |
+| Confirm new password too short | Confirm new password must be at least 8 characters |
+| New and confirm new don't match | New password and confirm new password are different |
 
