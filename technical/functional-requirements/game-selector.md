@@ -132,7 +132,13 @@ Note: It's not possible to corrects scores and re-send them to BOS. For this rea
 
 Any game can be cancelled as long as it's either `Not Started` or `In Progress.`
 
-To cancel a game click on the `Cancel` text next to the game. The game status will then change to `Canceled`
+To cancel a game click on the `Cancel` text next to the game. 
+
+A confirmation message will be shown. 
+
+![](../../.gitbook/assets/screen-shot-2020-03-09-at-4.37.27-pm.png)
+
+Click on `Yes` to cancel the game \(game status will then change to `Canceled)` or `No` to to return without canceling.
 
 A `canceled` incident will be sent to BOS.
 
