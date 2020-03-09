@@ -106,5 +106,7 @@ To finish a game enter the score for both home and away teams and click on the `
 
 A [`result`](../../api/bos-schema.md#result) incident followed by a [`finish`](../../api/bos-schema.md#finish) incident will be pushed to the BOS instances with the `whistle_end_time` set to the time when the Finish button was clicked, and the result to the home score and away score values.
 
-
+{% hint style="warning" %}
+Note: It's not possible to corrects scores and re-send them to BOS. For this reason the `finish` incident is sent immediately after the `result` incident as a result of just clicking on the `Finish` button.
+{% endhint %}
 
