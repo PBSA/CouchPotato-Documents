@@ -150,9 +150,15 @@ A `canceled` incident will be sent to BOS.
 
 A game can only be deleted if it hasn't been started \(has a status of `Not Started`\).
 
-To delete a game click on the Delete text next to the game. The game status will then change to Deleted
+To delete a game click on the Delete text next to the game. 
 
-A `canceled` incident will be sent to BOS so that BOS can tag the game int he same way as a canceled game.
+A confirmation message will be shown. 
+
+![](../../.gitbook/assets/screen-shot-2020-03-09-at-4.37.40-pm.png)
+
+Click on `Yes` to delete the game \(game will be removed\) or `No` to to return without deleting.
+
+If a game is deleted than a `canceled` incident must also be sent to BOS so that BOS can tag the game in the same way as a canceled game.
 
 {% hint style="warning" %}
 **Note**: The difference between a canceled game and a deleted game is that a deleted game is basically a game that was entered in error and once deleted is removed from the database so it can be re-entered correctly if needed. A canceled game is a proper game that for one reason or other doesn't take place after being created correctly.
