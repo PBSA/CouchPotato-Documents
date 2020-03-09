@@ -116,7 +116,7 @@ Any game can be cancelled as long as it's either `Not Started` or `In Progress.`
 
 To cancel a game click on the `Cancel` text next to the game. The game status will then change to `Canceled`
 
-A `cancelled` incident will be sent to BOS.
+A `canceled` incident will be sent to BOS.
 
 {% hint style="info" %}
 **Tip**: for the purposes of BOS incidents 'canceled' can also be interpreted as postponed but not as delayed. A delayed game is expected to restart. But once a game has been canceled it can't be restarted. If a game is canceled and then played the following day it would have to re-created with the new start time.
@@ -125,4 +125,14 @@ A `cancelled` incident will be sent to BOS.
 ## Delete Game
 
 A game can only be deleted if it hasn't been started \(has a status of `Not Started`\).
+
+To delete a game click on the Delete text next to the game. The game status will then change to Deleted
+
+A `canceled` incident will be sent to BOS so that BOS can tag the game int he same way as a canceled game.
+
+{% hint style="warning" %}
+**Note**: The difference between a canceled game and a deleted game is that a deleted game is basically a game that was entered in error and once deleted is removed from the database so it can be re-entered correctly if needed. A canceled game is a proper game that for one reason or other doesn't take place after being created correctly.
+{% endhint %}
+
+
 
