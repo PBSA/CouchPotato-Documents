@@ -8,6 +8,24 @@ The Game Selector is both used for creating new games/matches and then moving ea
 
 The selector can also be used to Cancel or Delete games.
 
+## Header
+
+The game selector header displays the following information:
+
+**Captions**
+
+| Text/Image | Type | Comments |
+| :--- | :--- | :--- |
+| \[league logo\] | Dynamic | The logo of the selected league  |
+| \[league name\]  | Dynamic |  The name of the selected league |
+| \[date\] | Dynamic | The date of the games.  |
+
+**Actions**
+
+| Caption | Type | Action |
+| :--- | :--- | :--- |
+| X | Button | Close the game selector. |
+
 ## Add Game
 
 To add new game use the input fields at the bottom of the screen and then click on the `ADD` button.
@@ -20,7 +38,7 @@ To add new game use the input fields at the bottom of the screen and then click 
 | :--- | :--- | :--- |
 | Start | Static |   |
 | Home Team | Static |   |
-| Away Team | Static |  |
+| Away Team | Static |   |
 
 **Inputs**
 
