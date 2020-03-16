@@ -29,6 +29,7 @@
 
 * [User Guide](help/how-to-guide/README.md)
   * [Getting Started](help/how-to-guide/getting-started.md)
+  * [Create Account and Log In](help/how-to-guide/create-account-and-log-in.md)
 * [FAQ](help/faq.md)
 
 ## Database
