@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Couch Potato](README.md)
-* [About](about.md)
 
 ## Technical
 

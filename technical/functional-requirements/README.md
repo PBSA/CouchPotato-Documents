@@ -26,39 +26,3 @@ Couch Potato aims to improve the data feed and data proxy challenges facing Book
 * Becoming a 'pay-per-input' service for the users of Couch Potato that are entering the data. Couch Potato will track every input such that a suitable payment model can be created for reimbursing the users.
 * Keeping the data feed providers accountable. If any instance of Couch Potato, operating as a mainnet data proxy, consistently delivers bad data or is unreliable, then that data proxy won't qualify for payment, and ultimately will be removed by witness consensus.
 
-
-
-### 3. Dashboard
-
-#### 3.1 Sports Tabs
-
-#### 3.2 Leagues Tabs
-
-#### 3.3 Calendar
-
-#### **3.4 Log Out**
-
-#### **3.5 Preferences**
-
-### 4. Game Selector
-
-#### 4.1 Add New Game
-
-#### 4.2 Change Game Status
-
-#### 4.3 Edit Game
-
-**4.3.1 Delete Game**
-
-**4.3.2 Cancel Game**
-
-### **5. Run Replay**
-
-### **6. Notifications**
-
-\*\*\*\*
-
-\*\*\*\*
-
-
-
