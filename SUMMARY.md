@@ -27,7 +27,7 @@
 
 ## Help
 
-* [How to Guide](help/how-to-guide.md)
+* [User Guide](help/how-to-guide.md)
 * [FAQ](help/faq.md)
 
 ## Database
