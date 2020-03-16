@@ -27,7 +27,8 @@
 
 ## Help
 
-* [User Guide](help/how-to-guide.md)
+* [User Guide](help/how-to-guide/README.md)
+  * [Getting Started](help/how-to-guide/getting-started.md)
 * [FAQ](help/faq.md)
 
 ## Database

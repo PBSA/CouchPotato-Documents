@@ -10,7 +10,7 @@
 
 {% page-ref page="help/faq.md" %}
 
-{% page-ref page="help/how-to-guide.md" %}
+{% page-ref page="help/how-to-guide/" %}
 
 
 
