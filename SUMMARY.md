@@ -18,12 +18,10 @@
     * [Account Menu](technical/functional-requirements/dashboard/account-menu.md)
   * [Game Selector](technical/functional-requirements/game-selector.md)
   * [Change Password](technical/functional-requirements/change-password.md)
-* [Bookie Oracle System \(BOS\)](technical/bookie-oracle-system-bos.md)
 
 ## Getting Started <a id="couch-potato"></a>
 
 * [Installation](couch-potato/installation.md)
-* [White-labelling](couch-potato/white-labelling.md)
 
 ## Help
 

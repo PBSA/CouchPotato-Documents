@@ -1,2 +1,0 @@
-# Bookie Oracle System \(BOS\)
-
