@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Couch Potato](README.md)
-* [Requirements](requirements.md)
-* [Storyline](storyline.md)
+* [Requirements](requirements/README.md)
+  * [Storyline](requirements/storyline.md)
 
 ## Technical
 
