@@ -4,5 +4,13 @@ A simple application, say Python/Django/Flask with minimal moving parts which ca
 
 Similar to the sports data, the eSports is an ever growing segment and we can encourage users from Twitch/Mixer etc to update the status of various games/streams and get paid for that. StreamersEdge for example attempts to incentive gamers for in-game achievements!. Right now we are using various game APIs to find in-game achievements. But its again error prone and has delays and not to mention risk of loosing access to the APIs.
 
-In-game achievements = nothing but events in a video stream over Twitch/Facebook-gaming/Mixer
+In-game achievements = nothing but events in a video stream over Twitch/Facebook-gaming/Mixer.
+
+**Phase I**
+
+Use BOS suite and send the data to it in the current mode.
+
+**Phase II**
+
+Explore possibility of replacing BOS suite. 
 
