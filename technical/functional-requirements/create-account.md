@@ -56,7 +56,9 @@ The create account screen is opened from the [Home Page](home-page.md) and is th
       <td style="text-align:left">Email Address</td>
     </tr>
   </tbody>
-</table>**Actions**
+</table>
+
+**Actions**
 
 | Caption | Type | Action |
 | :--- | :--- | :--- |
