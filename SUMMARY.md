@@ -6,7 +6,7 @@
 
 ## Technical
 
-* [Functional Requirements](technical/functional-requirements/README.md)
+* [Functional Requirements 1.0](technical/functional-requirements/README.md)
   * [Flow Diagrams](technical/functional-requirements/flow-diagrams.md)
   * [Home Page](technical/functional-requirements/home-page.md)
   * [Create Account](technical/functional-requirements/create-account.md)
