@@ -3,6 +3,7 @@
 * [Couch Potato](README.md)
 * [Requirements](requirements/README.md)
   * [Storyline](requirements/storyline.md)
+  * [2.0](requirements/2.0.md)
 
 ## Technical
 
