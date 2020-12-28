@@ -34,8 +34,8 @@
 
 ## Database
 
-* [Schema](database/schema.md)
-* [Objects](database/objects/README.md)
+* [Schema 1.0](database/schema.md)
+* [Objects 1.0](database/objects/README.md)
   * [Tables](database/objects/tables.md)
   * [Views](database/objects/views.md)
 * [Scripts](database/scripts.md)
@@ -43,7 +43,7 @@
 ## API
 
 * [Using the API](api/using-the-api.md)
-* [API Reference](api/api-reference/README.md)
+* [API Reference 1.0](api/api-reference/README.md)
   * [Objects](api/api-reference/objects-1.md)
   * [Error Codes](api/api-reference/error-codes.md)
 * [BOS Schema](api/bos-schema.md)

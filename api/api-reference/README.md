@@ -1,4 +1,4 @@
-# API Reference
+# API Reference 1.0
 
 ## add\_game
 

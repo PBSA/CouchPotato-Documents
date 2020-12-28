@@ -1,4 +1,4 @@
-# Schema
+# Schema 1.0
 
 ![](../.gitbook/assets/cp_erd.png)
 

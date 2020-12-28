@@ -4,7 +4,7 @@ description: >-
   database.
 ---
 
-# Objects
+# Objects 1.0
 
 {% page-ref page="tables.md" %}
 
